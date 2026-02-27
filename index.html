@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clevver — Secure Document Management for Professionals</title>
+    <title>Clevver — Permanent Encrypted Document Storage for Professionals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -31,7 +32,7 @@
             </ul>
             <div class="nav-cta">
                 <a href="#" class="btn btn-ghost">Sign In</a>
-                <a href="#demo" class="btn btn-primary">Schedule Demo</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                 <span></span>
@@ -48,7 +49,7 @@
             </ul>
             <div class="mobile-nav-cta">
                 <a href="#" class="btn btn-ghost">Sign In</a>
-                <a href="#demo" class="btn btn-primary">Schedule Demo</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
             </div>
         </div>
     </nav>
@@ -59,19 +60,19 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                     </svg>
-                    <span>SOC 2 Type II Certified</span>
+                    <span>AES-256 Encrypted by Default</span>
                 </div>
                 <h1 class="hero-title">
-                    Secure document management built for professionals who can't afford to lose trust
+                    Permanent document storage with enterprise-grade encryption
                 </h1>
                 <p class="hero-subtitle">
-                    HIPAA-compliant, attorney-client privileged, and audit-ready document storage for medical practices, law firms, and real estate professionals.
+                    Store critical documents once, access them forever. AES-256 encryption by default, no monthly fees, and immutable records designed for law firms, healthcare, academia, real estate, and enterprise organizations.
                 </p>
                 <div class="hero-cta">
-                    <a href="#demo" class="btn btn-primary btn-large">Schedule a Demo</a>
+                    <button class="btn btn-primary btn-large open-typeform">Schedule Demo</button>
                     <a href="#solutions" class="btn btn-outline btn-large">See How It Works</a>
                 </div>
                 <div class="hero-trust">
@@ -80,21 +81,21 @@
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
-                        <span>HIPAA Compliant</span>
+                        <span>Permanent Storage</span>
                     </div>
                     <div class="trust-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
-                        <span>SOC 2 Certified</span>
+                        <span>AES-256 Encrypted</span>
                     </div>
                     <div class="trust-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
-                        <span>Bank-Grade Encryption</span>
+                        <span>Free Retrieval Forever</span>
                     </div>
                 </div>
             </div>
@@ -146,10 +147,11 @@
         <div class="container">
             <p class="trust-label">Trusted by professionals at</p>
             <div class="trust-logos">
-                <div class="trust-logo">Mercer & Associates</div>
+                <div class="trust-logo">Deliverypath</div>
+                <div class="trust-logo">Pillar Nine</div>
                 <div class="trust-logo">Summit Medical Group</div>
+                <div class="trust-logo">Whitfield University</div>
                 <div class="trust-logo">Coastal Realty Partners</div>
-                <div class="trust-logo">Hartwick Legal</div>
             </div>
         </div>
     </section>
@@ -159,8 +161,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Solutions</span>
-                <h2 class="section-title">Built for how professionals actually work</h2>
-                <p class="section-subtitle">Every feature designed with compliance, security, and your workflow in mind.</p>
+                <h2 class="section-title">Purpose-built for professionals who demand permanence</h2>
+                <p class="section-subtitle">Every capability designed around encryption, immutability, and long-term document preservation.</p>
             </div>
             <div class="solutions-grid">
                 <div class="solution-card">
@@ -173,18 +175,18 @@
                             <polyline points="10 9 9 9 8 9"/>
                         </svg>
                     </div>
-                    <h3 class="solution-title">Smart Organization</h3>
-                    <p class="solution-desc">Auto-categorize by client, case, or matter. Tag, search, and retrieve any document in seconds.</p>
+                    <h3 class="solution-title">Tag-Based Organization</h3>
+                    <p class="solution-desc">Assign up to 100 tags per asset. Categorize by client, matter, department, or any custom taxonomy for instant retrieval.</p>
                 </div>
                 <div class="solution-card">
                     <div class="solution-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
                         </svg>
                     </div>
-                    <h3 class="solution-title">Client Portals</h3>
-                    <p class="solution-desc">Secure, branded portals for clients to upload and access documents. No more insecure email attachments.</p>
+                    <h3 class="solution-title">Permanent URLs</h3>
+                    <p class="solution-desc">Every stored document receives a unique, immutable URL that remains accessible indefinitely. Share via standard or shortened links.</p>
                 </div>
                 <div class="solution-card">
                     <div class="solution-icon">
@@ -193,8 +195,18 @@
                             <polyline points="12 6 12 12 16 14"/>
                         </svg>
                     </div>
-                    <h3 class="solution-title">Retention & Deadlines</h3>
-                    <p class="solution-desc">Automatic retention policies. Never miss a filing deadline or document expiration date again.</p>
+                    <h3 class="solution-title">Permanent Retention</h3>
+                    <p class="solution-desc">Documents are stored immutably with no expiration dates. Eliminate retention policy gaps and ensure records persist for centuries.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Encryption by Default</h3>
+                    <p class="solution-desc">AES-256 encryption is applied automatically before storage. Only authorized holders of the unique asset key can decrypt and access content.</p>
                 </div>
                 <div class="solution-card">
                     <div class="solution-icon">
@@ -205,29 +217,19 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
                     </div>
-                    <h3 class="solution-title">Team Collaboration</h3>
-                    <p class="solution-desc">Role-based access controls. Share securely with paralegals, nurses, or assistants with full audit trails.</p>
+                    <h3 class="solution-title">API Integration</h3>
+                    <p class="solution-desc">Integrate permanent storage directly into existing systems via the Clevver API. Create batches, attach files, and monitor storage jobs programmatically.</p>
                 </div>
                 <div class="solution-card">
                     <div class="solution-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <path d="M9 15l2 2 4-4"/>
+                            <polyline points="16 16 12 12 8 16"/>
+                            <line x1="12" y1="12" x2="12" y2="21"/>
+                            <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
                         </svg>
                     </div>
-                    <h3 class="solution-title">E-Signatures</h3>
-                    <p class="solution-desc">Built-in legally binding e-signatures. Track signature status and maintain complete document history.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                        </svg>
-                    </div>
-                    <h3 class="solution-title">Workflow Automation</h3>
-                    <p class="solution-desc">Route documents for review, approval, and filing automatically. Reduce manual work and human error.</p>
+                    <h3 class="solution-title">Bulk Upload & Batch Processing</h3>
+                    <p class="solution-desc">Upload large volumes of documents in a single batch operation. Monitor progress in real time and scale storage to meet enterprise-level demand.</p>
                 </div>
             </div>
         </div>
@@ -239,8 +241,8 @@
             <div class="security-grid">
                 <div class="security-content">
                     <span class="section-tag">Security</span>
-                    <h2 class="section-title">Your documents are safer than in a physical vault</h2>
-                    <p class="security-desc">We treat every document with the same care you do. Bank-grade encryption, redundant storage, and strict access controls come standard.</p>
+                    <h2 class="section-title">Enterprise-grade encryption, permanent by design</h2>
+                    <p class="security-desc">Every document is encrypted with AES-256 before it reaches storage. Combined with distributed redundancy and zero-knowledge architecture, your data remains protected and accessible for the long term.</p>
                     
                     <div class="security-features">
                         <div class="security-feature">
@@ -251,8 +253,8 @@
                                 </svg>
                             </div>
                             <div class="security-feature-text">
-                                <h4>End-to-End Encryption</h4>
-                                <p>AES-256 encryption in transit and at rest. Only you and authorized users can access your documents.</p>
+                                <h4>AES-256 Encryption by Default</h4>
+                                <p>All stored data is automatically encrypted before it is written. Encryption is not optional or add-on — it is the standard for every document.</p>
                             </div>
                         </div>
                         <div class="security-feature">
@@ -263,7 +265,7 @@
                             </div>
                             <div class="security-feature-text">
                                 <h4>Zero-Knowledge Architecture</h4>
-                                <p>We can't read your documents—even if we wanted to. Your encryption keys never leave your control.</p>
+                                <p>Clevver cannot access your encrypted documents. Your unique asset key serves as both the address and the decryption key, and it is never stored on our infrastructure.</p>
                             </div>
                         </div>
                         <div class="security-feature">
@@ -274,8 +276,8 @@
                                 </svg>
                             </div>
                             <div class="security-feature-text">
-                                <h4>Continuous Backups</h4>
-                                <p>Geographically distributed backups ensure your documents are never lost, even in a disaster.</p>
+                                <h4>Distributed Redundancy</h4>
+                                <p>Documents are stored across a geographically distributed network powered by distributed ledger technology, ensuring no single point of failure can compromise your data.</p>
                             </div>
                         </div>
                     </div>
@@ -303,7 +305,7 @@
                                         <polyline points="20 6 9 17 4 12"/>
                                     </svg>
                                 </div>
-                                <span>2FA Enabled</span>
+                                <span>Immutable Records</span>
                             </div>
                             <div class="security-status-item">
                                 <div class="status-check checked">
@@ -319,7 +321,7 @@
                                         <polyline points="20 6 9 17 4 12"/>
                                     </svg>
                                 </div>
-                                <span>Backup Verified</span>
+                                <span>Distributed Redundancy</span>
                             </div>
                         </div>
                         <div class="security-score">
@@ -346,41 +348,41 @@
         <div class="container">
             <div class="compliance-header">
                 <span class="section-tag">Compliance</span>
-                <h2 class="section-title">Sleep soundly. We've got compliance covered.</h2>
-                <p class="section-subtitle">Built from the ground up to meet the strictest regulatory requirements in healthcare, legal, and financial services.</p>
+                <h2 class="section-title">Compliance infrastructure for regulated industries</h2>
+                <p class="section-subtitle">Architected to meet the document retention and confidentiality requirements of healthcare, legal, academic, and enterprise organizations.</p>
             </div>
             <div class="compliance-grid">
                 <div class="compliance-card">
                     <div class="compliance-badge">Healthcare</div>
-                    <h3>HIPAA Compliant</h3>
-                    <p>Full HIPAA compliance with Business Associate Agreements (BAAs). Audit trails, access controls, and data integrity protections built in.</p>
+                    <h3>HIPAA-Ready Architecture</h3>
+                    <p>AES-256 encryption by default and immutable storage provide the technical foundation for HIPAA-compliant document handling.</p>
                     <ul class="compliance-list">
-                        <li>Encrypted data transmission & storage</li>
-                        <li>Role-based access controls</li>
-                        <li>Automatic audit logging</li>
-                        <li>Secure data retention & disposal</li>
+                        <li>Encrypted storage for all documents</li>
+                        <li>Zero-knowledge access controls</li>
+                        <li>Immutable audit trail</li>
+                        <li>Permanent data retention</li>
                     </ul>
                 </div>
                 <div class="compliance-card">
                     <div class="compliance-badge">Legal</div>
                     <h3>Attorney-Client Privilege</h3>
-                    <p>Document handling that respects privilege and work-product protections. Confidentiality-first architecture with strict access protocols.</p>
+                    <p>Immutable, encrypted records that preserve privilege and work-product protections. Documents cannot be altered, deleted, or accessed without authorization.</p>
                     <ul class="compliance-list">
-                        <li>Privileged access logging</li>
-                        <li>Ethical wall controls</li>
-                        <li>Conflict checking integration</li>
-                        <li>Secure client communication</li>
+                        <li>Tamper-proof document storage</li>
+                        <li>Encryption-based access control</li>
+                        <li>Permanent chain of custody</li>
+                        <li>Confidential client document sharing</li>
                     </ul>
                 </div>
                 <div class="compliance-card">
-                    <div class="compliance-badge">Enterprise</div>
-                    <h3>SOC 2 Type II</h3>
-                    <p>Independently audited security, availability, and confidentiality controls. Enterprise-grade infrastructure with 99.99% uptime SLA.</p>
+                    <div class="compliance-badge">Enterprise & Academia</div>
+                    <h3>Permanent Records Compliance</h3>
+                    <p>Immutable storage designed for organizations with long-term retention mandates. Documents persist for centuries without recurring infrastructure costs.</p>
                     <ul class="compliance-list">
-                        <li>SOC 2 Type II certified</li>
-                        <li>Annual penetration testing</li>
-                        <li>Disaster recovery plans</li>
-                        <li>Vendor risk management</li>
+                        <li>Tamper-proof, immutable records</li>
+                        <li>No recurring storage fees</li>
+                        <li>Distributed redundancy across regions</li>
+                        <li>Long-term regulatory retention</li>
                     </ul>
                 </div>
             </div>
@@ -392,7 +394,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Testimonials</span>
-                <h2 class="section-title">Trusted by professionals like you</h2>
+                <h2 class="section-title">Trusted by professionals across industries</h2>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -403,7 +405,7 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"Clevver transformed how we handle patient records. The HIPAA compliance was non-negotiable for us, and they delivered. Our staff loves how easy it is to use."</p>
+                    <p class="testimonial-text">"Clevver gave us permanent, encrypted storage for patient records without the burden of monthly fees. The AES-256 encryption by default was exactly what we needed to meet our compliance requirements."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">DR</div>
                         <div class="author-info">
@@ -420,7 +422,7 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"As a real estate attorney, document security is paramount. Clevver's audit trails and e-signature integration have cut our closing time by 40%."</p>
+                    <p class="testimonial-text">"As a real estate attorney, tamper-proof document storage is paramount. Clevver's permanent URLs and immutable records have streamlined how we share closing documents with clients."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">JC</div>
                         <div class="author-info">
@@ -437,12 +439,12 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"We manage thousands of property documents. The organization features and client portal have eliminated the chaos of email attachments and lost files."</p>
+                    <p class="testimonial-text">"We archive thousands of research documents. The tagging system and permanent URLs eliminated the risk of broken links and lost files. Paying once for storage that lasts centuries was an easy decision."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SP</div>
+                        <div class="author-avatar">ML</div>
                         <div class="author-info">
-                            <span class="author-name">Sarah Park</span>
-                            <span class="author-title">Broker, Park Realty Group</span>
+                            <span class="author-name">Dr. Margaret Liu</span>
+                            <span class="author-title">Director of Digital Archives, Whitfield University</span>
                         </div>
                     </div>
                 </div>
@@ -456,48 +458,47 @@
             <div class="section-header">
                 <span class="section-tag">Pricing</span>
                 <h2 class="section-title">Simple, transparent pricing</h2>
-                <p class="section-subtitle">No hidden fees. No surprises. Just straightforward pricing for professional document management.</p>
+                <p class="section-subtitle">Pay once to store. Access forever. No monthly subscriptions, no recurring fees.</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Professional</h3>
+                        <h3 class="pricing-name">Free</h3>
                         <div class="pricing-price">
                             <span class="currency">$</span>
-                            <span class="amount">49</span>
-                            <span class="period">/user/month</span>
+                            <span class="amount">0</span>
+                            <span class="period">to start</span>
                         </div>
-                        <p class="pricing-desc">For individual practitioners and small teams</p>
+                        <p class="pricing-desc">First 10 MB of permanent storage at no cost</p>
                     </div>
                     <ul class="pricing-features">
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>100 GB storage per user</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Unlimited client portals</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>E-signatures included</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>10 MB permanent storage</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>AES-256 encryption by default</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Permanent URLs for every file</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Tag-based organization</li>
                         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Email support</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Basic audit logs</li>
                     </ul>
-                    <a href="#demo" class="btn btn-outline btn-full">Get Started</a>
+                    <a href="#demo" class="btn btn-outline btn-full">Get Started Free</a>
                 </div>
                 <div class="pricing-card popular">
                     <div class="popular-badge">Most Popular</div>
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Business</h3>
+                        <h3 class="pricing-name">Standard</h3>
                         <div class="pricing-price">
                             <span class="currency">$</span>
-                            <span class="amount">79</span>
-                            <span class="period">/user/month</span>
+                            <span class="amount">5</span>
+                            <span class="period">/MB one-time</span>
                         </div>
-                        <p class="pricing-desc">For growing practices and firms</p>
+                        <p class="pricing-desc">For professionals and growing teams</p>
                     </div>
                     <ul class="pricing-features">
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>500 GB storage per user</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Everything in Professional</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced workflow automation</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priority phone & email support</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced analytics & reports</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>API access</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>All Free features, plus:</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Unlimited storage quota purchases</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priority support</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced analytics</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free retrieval forever</li>
                     </ul>
-                    <a href="#demo" class="btn btn-primary btn-full">Start Free Trial</a>
+                    <a href="#demo" class="btn btn-primary btn-full">Start Storing</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -505,20 +506,20 @@
                         <div class="pricing-price">
                             <span class="custom">Custom</span>
                         </div>
-                        <p class="pricing-desc">For large organizations with specific needs</p>
+                        <p class="pricing-desc">API integration with volume-based pricing</p>
                     </div>
                     <ul class="pricing-features">
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Unlimited storage</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Everything in Business</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>All Standard features, plus:</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Full API access & batch processing</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monthly billing at negotiated rates</li>
                         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Dedicated account manager</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom integrations</li>
                         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>SLA guarantees</li>
-                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>On-premise deployment option</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom integration support</li>
                     </ul>
-                    <a href="#demo" class="btn btn-outline btn-full">Contact Sales</a>
+                    <button class="btn btn-outline btn-full open-typeform">Contact Sales</button>
                 </div>
             </div>
-            <p class="pricing-note">All plans include SOC 2 compliance, bank-grade encryption, and 99.99% uptime SLA.</p>
+            <p class="pricing-note">Pay once. Access forever. All plans include AES-256 encryption and permanent storage.</p>
         </div>
     </section>
 
@@ -526,13 +527,12 @@
     <section class="cta" id="demo">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">See how Clevver protects your documents</h2>
-                <p class="cta-subtitle">Schedule a personalized demo with our team. We'll show you how Clevver works for your specific practice.</p>
-                <form class="cta-form">
-                    <input type="email" placeholder="Enter your work email" class="cta-input" required>
-                    <button type="submit" class="btn btn-primary btn-large">Schedule Demo</button>
-                </form>
-                <p class="cta-note">Free 14-day trial. No credit card required.</p>
+                <h2 class="cta-title">See how Clevver preserves your most critical documents</h2>
+                <p class="cta-subtitle">Schedule a personalized demo with our team. We will walk you through how permanent, encrypted storage works for your organization.</p>
+                <div class="cta-form">
+                    <button class="btn btn-primary btn-large open-typeform">Schedule Demo</button>
+                </div>
+                <p class="cta-note">First 10 MB free. No credit card required.</p>
             </div>
         </div>
     </section>
@@ -552,9 +552,9 @@
                         </div>
                         <span class="logo-text">Clevver</span>
                     </a>
-                    <p class="footer-tagline">Secure document management for professionals who can't afford to compromise.</p>
+                    <p class="footer-tagline">Permanent encrypted document storage for professionals who demand long-term preservation.</p>
                     <div class="footer-contact">
-                        <a href="mailto:hello@clevver.io">hello@clevver.io</a>
+                        <a href="mailto:hello@clevver.org">hello@clevver.org</a>
                         <a href="tel:+1-800-555-0123">1-800-555-0123</a>
                     </div>
                 </div>
@@ -574,7 +574,8 @@
                             <li><a href="#">For Healthcare</a></li>
                             <li><a href="#">For Legal</a></li>
                             <li><a href="#">For Real Estate</a></li>
-                            <li><a href="#">For Financial Services</a></li>
+                            <li><a href="#">For Academia</a></li>
+                            <li><a href="#">For Enterprise</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -598,15 +599,16 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Clevver, Inc. All rights reserved.</p>
+                <p>&copy; 2026 Clevver, Inc. All rights reserved.</p>
                 <div class="footer-badges">
-                    <span class="badge">SOC 2 Certified</span>
-                    <span class="badge">HIPAA Compliant</span>
+                    <span class="badge">AES-256 Encrypted</span>
+                    <span class="badge">Permanent Storage</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
 </body>
 </html>

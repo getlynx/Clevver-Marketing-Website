@@ -1,5 +1,5 @@
 /* ========================================
-   Clevver — Professional Document Management
+   Clevver — Permanent Encrypted Document Storage
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Close menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
+        // Close menu when clicking a link or button
+        mobileMenu.querySelectorAll('a, button').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 const spans = mobileMenuBtn.querySelectorAll('span');
@@ -104,36 +104,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ========================================
-    // Form Submission
+    // Typeform Popup
     // ========================================
-    const ctaForm = document.querySelector('.cta-form');
-    
-    if (ctaForm) {
-        ctaForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            const button = this.querySelector('button');
-            const originalText = button.textContent;
-            
-            // Show success state
-            button.textContent = 'Demo Scheduled!';
-            button.style.background = '#059669';
-            
-            // Reset after delay
-            setTimeout(() => {
-                button.textContent = originalText;
-                button.style.background = '';
-                this.reset();
-            }, 3000);
-            
-            console.log('Demo scheduled for:', email);
-        });
+    const TYPEFORM_ID = 'm04KvmJl';
+
+    function openTypeform() {
+        if (window.tf) {
+            window.tf.createPopup(TYPEFORM_ID, { size: 80 }).open();
+        }
     }
+
+    document.querySelectorAll('.open-typeform').forEach(btn => {
+        btn.addEventListener('click', openTypeform);
+    });
     
     // ========================================
     // Console Welcome Message
     // ========================================
     console.log('%cClevver', 'font-size: 24px; font-weight: bold; color: #1e3a5f;');
-    console.log('%cProfessional document management for healthcare, legal, and real estate.', 'font-size: 14px; color: #6b7280;');
-    console.log('%c🔒 Your documents are safe with us.', 'font-size: 12px; color: #059669;');
+    console.log('%cPermanent encrypted document storage for professionals.', 'font-size: 14px; color: #6b7280;');
+    console.log('%c🔒 Store once. Access forever.', 'font-size: 12px; color: #059669;');
 });
