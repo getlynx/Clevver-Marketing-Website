@@ -235,6 +235,14 @@ ul {
     width: auto;
 }
 
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
