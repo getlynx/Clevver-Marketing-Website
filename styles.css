@@ -230,16 +230,9 @@ ul {
     gap: var(--space-sm);
 }
 
-.logo-icon {
-    width: 36px;
+.logo-img {
     height: 36px;
-}
-
-.logo-text {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-primary);
+    width: auto;
 }
 
 .nav-links {

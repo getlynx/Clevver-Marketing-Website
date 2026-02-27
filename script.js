@@ -4,6 +4,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // ========================================
+    // Dynamic Copyright Year
+    // ========================================
+    document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+    // ========================================
     // Mobile Menu Toggle
     // ========================================
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
