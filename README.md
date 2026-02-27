@@ -32,17 +32,6 @@ No build tools, bundlers, or package managers required.
 └── README.md
 ```
 
-## Development
-
-Serve with any static file server:
-
-```bash
-python3 -m http.server 8000
-npx serve .
-```
-
-Or open `index.html` directly in a browser.
-
 ## Page Sections
 
 1. **Navigation** — Fixed header with mobile hamburger menu
@@ -67,7 +56,3 @@ Or open `index.html` directly in a browser.
 - **Contact form:** Typeform popup (form ID: m04KvmJl), loaded via Typeform Embed SDK
 - **Clevver platform:** https://clevver.org
 - **Technical docs:** https://docs.getlynx.io
-
-## Deployment
-
-Static site — deploy to any hosting provider (GitHub Pages, Netlify, Vercel, S3, etc.). No server-side processing or environment variables required.
