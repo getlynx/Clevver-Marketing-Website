@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — Clevver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
+    <style>
+        .page-content {
+            padding-top: calc(80px + var(--space-3xl));
+            padding-bottom: var(--space-3xl);
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .auth-wrapper {
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .auth-header .auth-logo {
+            display: inline-block;
+            margin-bottom: var(--space-lg);
+        }
+
+        .auth-header .auth-logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .auth-header h1 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .auth-header p {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .auth-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--color-text-primary);
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            transition: border-color var(--transition-base), box-shadow var(--transition-base);
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+        }
+
+        .form-group input::placeholder {
+            color: var(--color-text-muted);
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            margin-top: var(--space-xs);
+        }
+
+        .form-actions .btn {
+            width: 100%;
+            justify-content: center;
+            padding: 0.875rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .forgot-link {
+            text-align: right;
+            margin-top: -0.5rem;
+        }
+
+        .forgot-link a {
+            font-size: 0.85rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .forgot-link a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        .auth-footer {
+            text-align: center;
+            margin-top: var(--space-lg);
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        .auth-footer a {
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .auth-footer a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin: var(--space-xs) 0;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--color-border);
+        }
+
+        .signup-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+            margin-top: var(--space-xs);
+        }
+
+        .signup-note svg {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+
+        .auth-features {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+            flex-wrap: wrap;
+        }
+
+        .auth-feature {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .auth-feature svg {
+            width: 14px;
+            height: 14px;
+            color: var(--color-success);
+            flex-shrink: 0;
+        }
+
+        .auth-view { display: none; }
+        .auth-view.active { display: block; }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: var(--space-lg) 0;
+        }
+
+        .success-message.visible {
+            display: block;
+        }
+
+        .success-message svg {
+            width: 48px;
+            height: 48px;
+            color: var(--color-success);
+            margin-bottom: var(--space-md);
+        }
+
+        .success-message h2 {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .success-message p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 480px) {
+            .auth-card {
+                padding: var(--space-lg);
+            }
+            .auth-features {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="clevver-logo-header.png" alt="Clevver" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="login.html" class="btn btn-ghost">Sign In</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="login.html" class="btn btn-ghost">Sign In</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="auth-wrapper">
+
+            <!-- Sign In View -->
+            <div id="signinView" class="auth-view active">
+                <div class="auth-header">
+                    <a href="index.html" class="auth-logo">
+                        <img src="clevver-logo-header.png" alt="Clevver">
+                    </a>
+                    <h1>Welcome back</h1>
+                    <p>Sign in to access your documents</p>
+                </div>
+                <div class="auth-card">
+                    <form id="signinForm" class="auth-form" novalidate>
+                        <div class="form-group">
+                            <label for="signinEmail">Email address</label>
+                            <input type="email" id="signinEmail" placeholder="you@company.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signinPassword">Password</label>
+                            <input type="password" id="signinPassword" placeholder="Enter your password" autocomplete="current-password" required>
+                        </div>
+                        <div class="forgot-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth-footer">
+                    Don't have an account? <a href="#signup" id="showSignup">Sign up today</a>
+                </div>
+            </div>
+
+            <!-- Sign Up View -->
+            <div id="signupView" class="auth-view">
+                <div class="auth-header">
+                    <a href="index.html" class="auth-logo">
+                        <img src="clevver-logo-header.png" alt="Clevver">
+                    </a>
+                    <h1>Get started free</h1>
+                    <p>Your first 10 MB of storage is on us</p>
+                </div>
+                <div class="auth-card">
+                    <form id="signupForm" class="auth-form" novalidate>
+                        <div class="form-group">
+                            <label for="signupEmail">Email address</label>
+                            <input type="email" id="signupEmail" placeholder="you@company.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Continue with Email</button>
+                        </div>
+                        <p class="signup-note">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            We'll send you an email to complete your account setup. No password needed right now.
+                        </p>
+                    </form>
+                    <div id="signupSuccess" class="success-message">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h2>Check your inbox</h2>
+                        <p>We've sent a link to <strong id="signupEmailDisplay"></strong>. Click it to finish setting up your account.</p>
+                    </div>
+                </div>
+                <div class="auth-footer">
+                    Already have an account? <a href="#" id="showSignin">Sign in</a>
+                </div>
+            </div>
+
+            <!-- Trust signals -->
+            <div class="auth-features">
+                <div class="auth-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    AES-256 encrypted
+                </div>
+                <div class="auth-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    No monthly fees
+                </div>
+                <div class="auth-feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Permanent storage
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://get.clevver.org/786a334a9bc7509686ada1990b43777366ef28031a0944d296b3e9172fbb0cab.png" alt="Clevver" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Permanent encrypted document storage for professionals who demand long-term preservation.</p>
+                    <div class="footer-contact">
+                        <a href="mailto:sales@clevver.org">sales@clevver.org</a>
+                        <a href="tel:+1-855-335-7284">(855) 335-7284</a>
+                        <a href="https://bsky.app/profile/clevver.org" target="_blank" rel="noopener noreferrer">Join us on Bluesky</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#solutions">Features</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="index.html#compliance">Compliance</a></li>
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#">For Healthcare</a></li>
+                            <li><a href="#">For Legal</a></li>
+                            <li><a href="#">For Real Estate</a></li>
+                            <li><a href="#">For Academia</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#" class="open-typeform">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+                            <li><a href="hipaa.html">HIPAA Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyrightYear"></span> Deliverypath Wireless, LLC. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">AES-256 Encrypted</span>
+                    <span class="badge">Permanent Storage</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <script>
+        (function () {
+            const signinView = document.getElementById('signinView');
+            const signupView = document.getElementById('signupView');
+            const showSignup = document.getElementById('showSignup');
+            const showSignin = document.getElementById('showSignin');
+            const signinForm = document.getElementById('signinForm');
+            const signupForm = document.getElementById('signupForm');
+            const signupSuccess = document.getElementById('signupSuccess');
+            const signupEmailDisplay = document.getElementById('signupEmailDisplay');
+
+            function switchTo(view) {
+                signinView.classList.remove('active');
+                signupView.classList.remove('active');
+                view.classList.add('active');
+                document.title = view === signupView
+                    ? 'Sign Up — Clevver'
+                    : 'Sign In — Clevver';
+            }
+
+            showSignup.addEventListener('click', function (e) {
+                e.preventDefault();
+                switchTo(signupView);
+                history.replaceState(null, '', '#signup');
+            });
+
+            showSignin.addEventListener('click', function (e) {
+                e.preventDefault();
+                switchTo(signinView);
+                history.replaceState(null, '', window.location.pathname);
+            });
+
+            if (window.location.hash === '#signup') {
+                switchTo(signupView);
+            }
+
+            signinForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+            });
+
+            signupForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = document.getElementById('signupEmail').value.trim();
+                if (!email) return;
+                signupEmailDisplay.textContent = email;
+                signupForm.style.display = 'none';
+                signupSuccess.classList.add('visible');
+            });
+        })();
+    </script>
+</body>
+</html>
