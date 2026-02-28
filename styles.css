@@ -233,16 +233,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--brand-gradient);
-    z-index: 200;
-}
 
 img, svg {
     display: block;
