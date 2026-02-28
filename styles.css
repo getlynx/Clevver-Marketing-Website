@@ -1443,10 +1443,7 @@ ul {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: var(--space-md);
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-primary);
 }
 
 .footer-column ul {
