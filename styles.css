@@ -840,6 +840,10 @@ ul {
     margin-bottom: var(--space-2xl);
 }
 
+.compliance-header .section-subtitle {
+    margin: 0 auto;
+}
+
 .compliance-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
