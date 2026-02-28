@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // Console Welcome Message
     // ========================================
-    console.log('%cClevver', 'font-size: 24px; font-weight: bold; color: #1e3a5f;');
+    console.log('%cClevver', 'font-size: 24px; font-weight: bold; color: #184389;');
     console.log('%cPermanent encrypted document storage for professionals.', 'font-size: 14px; color: #6b7280;');
     console.log('%c🔒 Store once. Access forever.', 'font-size: 12px; color: #059669;');
 });

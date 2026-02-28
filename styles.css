@@ -5,10 +5,13 @@
 
 /* CSS Variables */
 :root {
-    /* Colors - Professional Navy & Warm Accents */
-    --color-primary: #1e3a5f;
-    --color-primary-dark: #152a45;
-    --color-primary-light: #2a4a73;
+    /* Colors - Brand Blues & Warm Accents */
+    --color-primary: #184389;
+    --color-primary-dark: #0f2d66;
+    --color-primary-light: #1f56a8;
+    
+    /* Brand Gradient */
+    --brand-gradient: linear-gradient(90deg, #009BDF 10%, #184389 50%, #E2195B 90%);
     
     --color-accent: #d4a574;
     --color-accent-dark: #c49464;
@@ -28,8 +31,8 @@
     --color-success-bg: #d1fae5;
     
     /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-serif: 'Crimson Pro', Georgia, serif;
+    --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
     
     /* Spacing */
     --space-xs: 0.5rem;
@@ -64,9 +67,9 @@
    ======================================== */
 
 [data-theme="dark"] {
-    --color-primary: #7ab0e0;
-    --color-primary-dark: #5a90c0;
-    --color-primary-light: #9ac8f0;
+    --color-primary: #4db8e8;
+    --color-primary-dark: #2a8cc4;
+    --color-primary-light: #7dd4f5;
 
     --color-accent: #d4a574;
     --color-accent-dark: #c49464;
@@ -148,15 +151,15 @@
 }
 
 [data-theme="dark"] .security-card-header {
-    background: #1e3a5f;
+    background: #184389;
 }
 
 [data-theme="dark"] .doc-badge {
-    background: #1e3a5f;
+    background: #184389;
 }
 
 [data-theme="dark"] .author-avatar {
-    background: #1e3a5f;
+    background: #184389;
 }
 
 [data-theme="dark"] .mobile-menu {
@@ -232,6 +235,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--brand-gradient);
+    z-index: 200;
+}
+
 img, svg {
     display: block;
     max-width: 100%;
@@ -264,12 +278,15 @@ ul {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--color-accent-dark);
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: var(--space-sm);
 }
 
 .section-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     line-height: 1.2;
@@ -509,7 +526,7 @@ ul {
 }
 
 .hero-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 600;
     line-height: 1.15;
@@ -723,7 +740,7 @@ ul {
 }
 
 .trust-logo {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--color-text-secondary);
@@ -776,7 +793,7 @@ ul {
 }
 
 .solution-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -842,7 +859,7 @@ ul {
 }
 
 .security-feature-text h4 {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -959,7 +976,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--color-success);
@@ -1031,7 +1048,7 @@ ul {
 }
 
 .compliance-card h3 {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.375rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -1202,7 +1219,7 @@ ul {
 }
 
 .pricing-name {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 1.375rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -1223,7 +1240,7 @@ ul {
 }
 
 .pricing-price .amount {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-primary);
@@ -1235,7 +1252,7 @@ ul {
 }
 
 .pricing-price .custom {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -1288,7 +1305,7 @@ ul {
 }
 
 .cta-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 600;
     color: white;
