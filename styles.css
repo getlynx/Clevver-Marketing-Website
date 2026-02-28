@@ -139,7 +139,9 @@
     color: var(--color-text-muted);
 }
 
-[data-theme="dark"] .doc-dots span { background: var(--color-border); }
+[data-theme="dark"] .doc-dots span:nth-child(1) { background: #ef4444; }
+[data-theme="dark"] .doc-dots span:nth-child(2) { background: #eab308; }
+[data-theme="dark"] .doc-dots span:nth-child(3) { background: #22c55e; }
 
 [data-theme="dark"] .footer-contact a:hover,
 [data-theme="dark"] .footer-column a:hover,
@@ -601,9 +603,9 @@ ul {
     background: var(--color-border);
 }
 
-.doc-dots span {
-    background: var(--color-border);
-}
+.doc-dots span:nth-child(1) { background: #ef4444; }
+.doc-dots span:nth-child(2) { background: #eab308; }
+.doc-dots span:nth-child(3) { background: #22c55e; }
 
 .doc-badge {
     padding: 0.25rem 0.75rem;
