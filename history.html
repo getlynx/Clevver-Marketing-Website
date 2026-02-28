@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History — Clevver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
+    <style>
+        .page-content {
+            padding-top: calc(80px + var(--space-2xl));
+            padding-bottom: var(--space-2xl);
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        .page-header .section-subtitle {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .prose {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .prose h2 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-md);
+        }
+        .prose p, .prose li {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: var(--color-text-secondary);
+        }
+        .prose ul {
+            list-style: none;
+            padding: 0;
+        }
+        .prose ul li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: var(--space-xs);
+        }
+        .prose ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--color-accent);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--color-border);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--space-xl);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.65rem;
+            top: 0.35rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            border: 3px solid var(--color-bg);
+            box-shadow: 0 0 0 2px var(--color-accent);
+        }
+        .timeline-year {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-accent-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+        .timeline-title {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            margin-bottom: var(--space-sm);
+        }
+        .timeline-item p {
+            margin: 0;
+        }
+        .highlight-box {
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+        .highlight-box h2 {
+            margin-top: 0;
+        }
+        .history-cta {
+            text-align: center;
+            padding: var(--space-2xl) 0;
+            margin-top: var(--space-xl);
+            border-top: 1px solid var(--color-border);
+        }
+        .history-cta h2 {
+            text-align: center;
+        }
+        .history-cta p {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto var(--space-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="clevver-logo-header.png" alt="Clevver" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://clevver.org/dashboard/login" class="btn btn-ghost">Sign In</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="https://clevver.org/dashboard/login" class="btn btn-ghost">Sign In</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <span class="section-tag">Our Story</span>
+                <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Built to Outlast Us</h1>
+                <p class="section-subtitle">How a blockchain designed for permanence became the foundation for a new kind of document storage.</p>
+            </div>
+
+            <div class="prose">
+                <h2>The Problem We Saw</h2>
+                <p>Every year, critical documents disappear. Cloud providers shut down. Subscription payments lapse. Hard drives fail. Terms of service change overnight. The digital world was built on the assumption that storage is temporary, that someone has to keep paying for your data to exist.</p>
+                <p>We believed that was fundamentally wrong. Important records, whether they belong to a law firm, a hospital, a university, or a family, deserve storage that doesn't depend on next month's invoice.</p>
+
+                <h2>The Journey</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-title">Lynx Blockchain Launches</div>
+                        <p>The Lynx blockchain was created as an eco-friendly, energy-efficient alternative to traditional blockchains. Built on Proof of Stake consensus, it was designed from day one for a specific purpose: permanent data storage. Not speculation. Not trading. Storage.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-title">Data Storage Goes Live</div>
+                        <p>Lynx introduced the ability to store complete digital files directly on the blockchain, not just references or hashes, but the actual data. This meant files could survive independently of any single company, server, or service provider.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-title">Clevver Is Born</div>
+                        <p>As enterprise customers began using the Lynx storage API, it became clear that the technology needed a consumer-friendly interface. Clevver launched as a simple drag-and-drop platform that made permanent, encrypted storage accessible to anyone, no technical knowledge required.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">Multi-Chain Architecture</div>
+                        <p>To meet growing demand, the platform expanded from a single blockchain to a network of over 400 independent chains operating in parallel. This gave Clevver virtually unlimited storage capacity while maintaining the permanence and security guarantees of the original design.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-title">Enterprise and Professional Focus</div>
+                        <p>Clevver shifted its focus to the industries that need permanent storage the most: healthcare, legal, academia, real estate, and corporate enterprise. AES-256 encryption became the default for every stored document. The API expanded to support batch processing, tagging, and programmatic access for organizations managing thousands of records.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Today</div>
+                        <div class="timeline-title">Permanent Storage for Professionals</div>
+                        <p>Clevver serves organizations that cannot afford to lose a document. With a one-time storage fee, zero-knowledge encryption, and a distributed infrastructure designed to preserve data for over 250 years, Clevver is the last place you will ever need to store a file.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h2>How It Works Under the Hood</h2>
+                    <p>Unlike traditional cloud storage where your files sit on a company's servers, Clevver stores your documents directly on the Lynx blockchain network. Think of it like the difference between renting a storage unit and carving something into stone.</p>
+                    <p>When you upload a file, it is encrypted with AES-256, distributed across a geographically redundant network of independent nodes, and permanently recorded on the blockchain. The Lynx coins used to pay for storage are destroyed in the process, a mechanism called "burning," which means your data's permanence is baked into the economics of the system itself.</p>
+                    <p>The result: no recurring fees, no single point of failure, no company that can pull the plug. Your data exists as long as the network exists, and the network is designed to run for centuries on minimal energy through Proof of Stake consensus.</p>
+                </div>
+
+                <h2>What Makes Clevver Different</h2>
+                <ul>
+                    <li><strong>Pay once, access forever.</strong> No subscriptions, no renewals, no surprise invoices.</li>
+                    <li><strong>Encrypted by default.</strong> AES-256 encryption on every file, every time. Not optional.</li>
+                    <li><strong>Truly permanent.</strong> Files cannot be altered, deleted, or lost. Not by us, not by anyone.</li>
+                    <li><strong>Zero-knowledge architecture.</strong> We cannot read your documents. Only you hold the keys.</li>
+                    <li><strong>Sustainable infrastructure.</strong> Proof of Stake consensus uses a fraction of the energy of traditional data centers.</li>
+                    <li><strong>No vendor lock-in.</strong> Your documents have permanent URLs that work independently of any application or interface.</li>
+                </ul>
+
+                <div class="history-cta">
+                    <h2>Ready to store something that matters?</h2>
+                    <p>See how Clevver can preserve your organization's most critical records, permanently.</p>
+                    <button class="btn btn-primary btn-large open-typeform">Schedule Demo</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://get.clevver.org/786a334a9bc7509686ada1990b43777366ef28031a0944d296b3e9172fbb0cab.png" alt="Clevver" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Permanent encrypted document storage for professionals who demand long-term preservation.</p>
+                    <div class="footer-contact">
+                        <a href="mailto:sales@clevver.org">sales@clevver.org</a>
+                        <a href="tel:+1-855-335-7284">(855) 335-7284</a>
+                        <a href="https://bsky.app/profile/clevver.org" target="_blank" rel="noopener noreferrer">Join us on Bluesky</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#solutions">Features</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="index.html#compliance">Compliance</a></li>
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#">For Healthcare</a></li>
+                            <li><a href="#">For Legal</a></li>
+                            <li><a href="#">For Real Estate</a></li>
+                            <li><a href="#">For Academia</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#" class="open-typeform">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+                            <li><a href="hipaa.html">HIPAA Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyrightYear"></span> Deliverypath Wireless, LLC. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">AES-256 Encrypted</span>
+                    <span class="badge">Permanent Storage</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+</body>
+</html>
