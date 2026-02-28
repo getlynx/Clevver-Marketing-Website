@@ -580,7 +580,6 @@ ul {
     box-shadow: var(--shadow-xl);
     overflow: hidden;
 }
-}
 
 .doc-header {
     display: flex;
