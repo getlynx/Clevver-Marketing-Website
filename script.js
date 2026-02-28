@@ -4,6 +4,22 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // ========================================
+    // Dark Mode Toggle
+    // ========================================
+    document.querySelectorAll('.dark-mode-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    });
+
+    // ========================================
     // Dynamic Copyright Year
     // ========================================
     document.getElementById('copyrightYear').textContent = new Date().getFullYear();
@@ -31,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Close menu when clicking a link or button
         mobileMenu.querySelectorAll('a, button').forEach(link => {
+            if (link.classList.contains('dark-mode-toggle')) return;
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 const spans = mobileMenuBtn.querySelectorAll('span');
