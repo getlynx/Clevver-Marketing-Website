@@ -489,7 +489,7 @@ ul {
    ======================================== */
 
 .hero {
-    padding: calc(72px + var(--space-3xl)) 0 var(--space-3xl);
+    padding: calc(72px + var(--space-xl)) 0 var(--space-3xl);
     background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
 }
 
@@ -1326,6 +1326,155 @@ ul {
     color: var(--color-text-muted);
 }
 
+/* 10-Year Cost Comparison */
+.cost-comparison {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-3xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.cost-comparison .section-header {
+    margin-bottom: var(--space-2xl);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.comparison-col {
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+}
+
+.comparison-col--legacy {
+    background: var(--color-bg-alt);
+}
+
+.comparison-col--clevver {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.comparison-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-md);
+}
+
+.comparison-col--legacy .comparison-label {
+    background: var(--color-text-muted);
+    color: #fff;
+}
+
+.comparison-col--clevver .comparison-label {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.comparison-heading {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.comparison-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+}
+
+.comparison-breakdown {
+    margin-bottom: var(--space-lg);
+}
+
+.breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.breakdown-row:last-child {
+    border-bottom: none;
+}
+
+.breakdown-label {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+}
+
+.breakdown-value {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.breakdown-row--total {
+    border-bottom: none;
+    padding-top: var(--space-md);
+    margin-top: var(--space-xs);
+    border-top: 2px solid var(--color-border);
+}
+
+.breakdown-row--total .breakdown-label {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.breakdown-row--total .breakdown-value {
+    font-size: 1.25rem;
+}
+
+.comparison-col--legacy .breakdown-row--total .breakdown-value {
+    color: var(--color-error, #dc3545);
+}
+
+.comparison-col--clevver .breakdown-row--total .breakdown-value {
+    color: var(--color-success);
+}
+
+.comparison-note {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.comparison-savings {
+    text-align: center;
+    padding: var(--space-lg);
+    background: var(--color-success-bg);
+    border-radius: var(--radius-lg);
+}
+
+.savings-amount {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-success);
+    margin-bottom: var(--space-xs);
+}
+
+.savings-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+}
+
 /* ========================================
    CTA Section
    ======================================== */
@@ -1560,6 +1709,10 @@ ul {
     .pricing-grid {
         grid-template-columns: 1fr;
     }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
     
     .pricing-card.popular {
         transform: none;
@@ -1585,7 +1738,7 @@ ul {
     }
     
     .hero {
-        padding: calc(72px + var(--space-2xl)) 0 var(--space-2xl);
+        padding: calc(72px + var(--space-md)) 0 var(--space-2xl);
     }
     
     .hero-title {
