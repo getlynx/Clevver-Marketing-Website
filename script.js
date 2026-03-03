@@ -140,63 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ========================================
-    // Cost Comparison Slider
-    // ========================================
-    const slider = document.getElementById('monthlySpend');
-    if (slider) {
-        const INFLATION_RATE = 0.03;
-        const CLEVVER_PRICE = 99;
-
-        const sliderValueEl = document.getElementById('sliderValue');
-        const legacyMonthlyEl = document.getElementById('legacyMonthly');
-        const legacyYear1El = document.getElementById('legacyYear1');
-        const legacyYear5El = document.getElementById('legacyYear5');
-        const legacyTotalEl = document.getElementById('legacyTotal');
-        const clevverOnetimeEl = document.getElementById('clevverOnetime');
-        const clevverYear1El = document.getElementById('clevverYear1');
-        const clevverYear5El = document.getElementById('clevverYear5');
-        const clevverTotalEl = document.getElementById('clevverTotal');
-        const savingsAmountEl = document.getElementById('savingsAmount');
-
-        function formatCurrency(n) {
-            return '$' + Math.round(n).toLocaleString('en-US');
-        }
-
-        function calcLegacyCumulative(monthly, years) {
-            var total = 0;
-            for (var y = 0; y < years; y++) {
-                total += 12 * monthly * Math.pow(1 + INFLATION_RATE, y);
-            }
-            return total;
-        }
-
-        function updateComparison() {
-            var monthly = parseInt(slider.value, 10);
-            sliderValueEl.textContent = monthly;
-
-            var year1 = calcLegacyCumulative(monthly, 1);
-            var year5 = calcLegacyCumulative(monthly, 5);
-            var year10 = calcLegacyCumulative(monthly, 10);
-
-            legacyMonthlyEl.textContent = '$' + monthly + '/mo';
-            legacyYear1El.textContent = formatCurrency(year1);
-            legacyYear5El.textContent = formatCurrency(year5);
-            legacyTotalEl.textContent = formatCurrency(year10);
-
-            clevverOnetimeEl.textContent = formatCurrency(CLEVVER_PRICE);
-            clevverYear1El.textContent = formatCurrency(CLEVVER_PRICE);
-            clevverYear5El.textContent = formatCurrency(CLEVVER_PRICE);
-            clevverTotalEl.textContent = formatCurrency(CLEVVER_PRICE);
-
-            var savings = year10 - CLEVVER_PRICE;
-            savingsAmountEl.textContent = 'Save over ' + formatCurrency(savings);
-        }
-
-        slider.addEventListener('input', updateComparison);
-        updateComparison();
-    }
-
-    // ========================================
     // Console Welcome Message
     // ========================================
     console.log('%cClevver', 'font-size: 24px; font-weight: bold; color: #184389;');
