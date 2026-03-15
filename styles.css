@@ -917,7 +917,7 @@ ul {
 
 .security-card {
     width: 100%;
-    max-width: 380px;
+    max-width: 420px;
     background: white;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
@@ -981,6 +981,7 @@ ul {
     align-items: center;
     gap: var(--space-md);
     padding: var(--space-md);
+    background: var(--color-bg-alt);
 }
 
 .score-circle {
