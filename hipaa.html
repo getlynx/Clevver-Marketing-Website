@@ -102,6 +102,12 @@
             padding: 2px 8px;
             border-radius: 4px;
             margin-bottom: var(--space-sm);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+        a.ref-code:hover {
+            background: rgba(212, 165, 116, 0.25);
+            text-decoration: underline;
         }
         .safeguard-card p {
             font-size: 0.95rem;
@@ -194,7 +200,7 @@
 
                 <div class="safeguard-grid">
                     <div class="safeguard-card">
-                        <span class="ref-code">&sect; 164.312(a)(2)(iv)</span>
+                        <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(a)(2)(iv)" target="_blank" rel="noopener noreferrer" class="ref-code">&sect; 164.312(a)(2)(iv)</a>
                         <h3>AES-256 Encryption by Default</h3>
                         <p>All data is encrypted with AES-256 before it is written to storage. Encryption is not optional and cannot be disabled. This satisfies the HIPAA encryption and decryption implementation specification for electronic protected health information (ePHI) at rest.</p>
                     </div>
@@ -204,22 +210,22 @@
                         <p>Clevver cannot access, read, or decrypt your documents. Only the user who stored the data holds the keys necessary to retrieve and decrypt it. This eliminates an entire category of insider-threat risk.</p>
                     </div>
                     <div class="safeguard-card">
-                        <span class="ref-code">&sect; 164.312(c)(1)</span>
+                        <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(c)(1)" target="_blank" rel="noopener noreferrer" class="ref-code">&sect; 164.312(c)(1)</a>
                         <h3>Immutable Storage</h3>
                         <p>Once a document is stored, it cannot be altered, overwritten, or deleted. This satisfies the HIPAA integrity controls requirement by ensuring that ePHI remains exactly as it was at the time of storage, providing a tamper-proof record.</p>
                     </div>
                     <div class="safeguard-card">
-                        <span class="ref-code">&sect; 164.312(d)</span>
+                        <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(d)" target="_blank" rel="noopener noreferrer" class="ref-code">&sect; 164.312(d)</a>
                         <h3>Permanent Access Controls</h3>
                         <p>Every stored document receives a unique, permanent URL. Combined with AES-256 encryption, only parties with the correct credentials can retrieve and decrypt the content. This satisfies the person or entity authentication standard.</p>
                     </div>
                     <div class="safeguard-card">
-                        <span class="ref-code">&sect; 164.308(a)(7)</span>
+                        <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308#p-164.308(a)(7)" target="_blank" rel="noopener noreferrer" class="ref-code">&sect; 164.308(a)(7)</a>
                         <h3>Distributed Redundancy</h3>
                         <p>Data is stored across a geographically distributed network of independent nodes. This exceeds the HIPAA contingency plan requirements for data backup and disaster recovery by ensuring no single point of failure can result in data loss.</p>
                     </div>
                     <div class="safeguard-card">
-                        <span class="ref-code">&sect; 164.312(b)</span>
+                        <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)" target="_blank" rel="noopener noreferrer" class="ref-code">&sect; 164.312(b)</a>
                         <h3>Audit-Ready by Design</h3>
                         <p>Every storage event is permanently recorded on the underlying distributed ledger. These records are immutable and independently verifiable, providing a built-in audit trail that satisfies HIPAA audit controls requirements.</p>
                     </div>
