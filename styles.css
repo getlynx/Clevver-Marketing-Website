@@ -1446,7 +1446,7 @@ ul {
 }
 
 .comparison-col--clevver .breakdown-row--total .breakdown-value {
-    color: var(--color-success);
+    color: #009BDF;
 }
 
 .comparison-note {
@@ -1459,7 +1459,7 @@ ul {
 .comparison-savings {
     text-align: center;
     padding: var(--space-lg);
-    background: var(--color-success-bg);
+    background: rgba(0, 155, 223, 0.1);
     border-radius: var(--radius-lg);
 }
 
@@ -1468,7 +1468,7 @@ ul {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-success);
+    color: #009BDF;
     margin-bottom: var(--space-xs);
 }
 
