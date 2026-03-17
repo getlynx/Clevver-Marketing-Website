@@ -41,13 +41,13 @@ No build tools, bundlers, or package managers required.
 5. **Security** — AES-256 encryption, zero-knowledge architecture, distributed redundancy
 6. **Compliance** — Healthcare (HIPAA), Legal (attorney-client privilege), Enterprise & Academia (permanent records)
 7. **Testimonials** — Customer quotes from healthcare, legal, and academic professionals
-8. **Pricing** — 3 tiers: Free (10 MB), Standard ($5/MB one-time), Enterprise (custom API pricing)
+8. **Pricing** — 3 tiers: Free (5 MB), Standard ($5/MB one-time), Enterprise (custom API pricing)
 9. **CTA** — Demo scheduling link
 10. **Footer** — Links, contact info, badges
 
 ## Pricing Model
 
-- **Free** — First 10 MB of permanent storage at no cost
+- **Free** — First 5 MB of permanent storage at no cost
 - **Standard** — $5 per MB, one-time payment, free retrieval forever
 - **Enterprise** — Custom pricing with API integration and monthly billing at negotiated rates
 
