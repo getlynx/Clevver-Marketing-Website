@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <ul>
                             <li><a href="history.html">History</a></li>
                             <li><a href="index.html#security">Security</a></li>
-                            <li><a href="#">Status</a></li>
+                            <li><a href="https://stats.uptimerobot.com/jBmX1iYk3l/" target="_blank" rel="noopener noreferrer">Status</a></li>
                             <li><a href="#" class="open-typeform">Contact</a></li>
                         </ul>
                     </div>
