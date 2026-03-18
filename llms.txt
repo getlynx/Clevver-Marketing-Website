@@ -1,0 +1,23 @@
+# Clevver
+
+> Permanent encrypted document storage for AI work. Save once, access forever.
+
+Clevver is a file storage platform designed for AI agents and humans who work with AI. It provides permanent, AES-256 encrypted storage with a pay-once pricing model — no monthly fees. Files stored in Clevver get permanent URLs that can be shared and restored in any AI tool.
+
+## Core Capabilities
+
+- Permanent file storage with AES-256 encryption
+- Works with any AI agent (ChatGPT, Claude, Copilot, etc.)
+- CLI tool for agent-driven file operations (store, fetch, list, tag, archive)
+- Shareable permanent links for collaboration
+- Zero-knowledge architecture — Clevver cannot read your files
+- HIPAA-compliant infrastructure for healthcare data
+- Pay once for storage, retrieve forever at no cost
+
+## Links
+
+- Website: https://clevver.org
+- Agent CLI Documentation: https://clevver.org/clevver-agent-cli.html
+- Privacy Policy: https://clevver.org/privacy.html
+- HIPAA Compliance: https://clevver.org/hipaa.html
+- Full CLI Skills: https://clevver.org/llms-full.txt

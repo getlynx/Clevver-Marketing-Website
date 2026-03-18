@@ -1,0 +1,137 @@
+# Clevver
+
+> Permanent encrypted document storage for AI work. Save once, access forever.
+
+Clevver is a file storage platform designed for AI agents and humans who work with AI. It provides permanent, AES-256 encrypted storage with a pay-once pricing model — no monthly fees. Files stored in Clevver get permanent URLs that can be shared and restored in any AI tool.
+
+## Core Capabilities
+
+- Permanent file storage with AES-256 encryption
+- Works with any AI agent (ChatGPT, Claude, Copilot, etc.)
+- CLI tool for agent-driven file operations (store, fetch, list, tag, archive)
+- Shareable permanent links for collaboration
+- Zero-knowledge architecture — Clevver cannot read your files
+- HIPAA-compliant infrastructure for healthcare data
+- Pay once for storage, retrieve forever at no cost
+
+## Links
+
+- Website: https://clevver.org
+- Agent CLI Documentation: https://clevver.org/clevver-agent-cli.html
+- Privacy Policy: https://clevver.org/privacy.html
+- HIPAA Compliance: https://clevver.org/hipaa.html
+
+---
+
+# Clevver CLI Skills
+
+## Authentication
+
+### `clevver login`
+Authenticate with Clevver. Prompts interactively for credentials if not provided via flags.
+
+```
+clevver login
+clevver login --email rob@deliverypath.com --password secret
+```
+
+| Flag | Description |
+|------|-------------|
+| `--email` | Email address |
+| `--password` | Password |
+
+### `clevver logout`
+Clear stored credentials and sign out.
+
+```
+clevver logout
+```
+
+### `clevver whoami`
+Show current user and storage quota.
+
+```
+clevver whoami
+```
+
+## Files
+
+### `clevver store <file>`
+Upload a file to Clevver.
+
+```
+clevver store report.pdf
+clevver store photo.png --tags "photos, vacation"
+```
+
+| Flag | Description |
+|------|-------------|
+| `--tags` | Comma-separated tags to attach |
+
+### `clevver fetch <file-id>`
+Download a file from Clevver.
+
+```
+clevver fetch 3b7f769a-c8ee-4625-8609-d562b5abd2ac
+clevver fetch 3b7f769a -o report.pdf
+clevver fetch 3b7f769a --stdout | head
+```
+
+| Flag | Description |
+|------|-------------|
+| `-o`, `--output` | Output file path (defaults to original filename) |
+| `--stdout` | Print file contents to stdout |
+
+### `clevver ls`
+List files with optional filtering and pagination.
+
+```
+clevver ls
+clevver ls --tags "photos, vacation"
+clevver ls --archived
+clevver ls --page 2
+```
+
+| Flag | Description |
+|------|-------------|
+| `--tags` | Filter by comma-separated tags |
+| `--archived` | Show archived files |
+| `--page` | Page number (default: 1) |
+
+### `clevver archive <file-id>`
+Archive (soft-delete) a file. Warning: this strips all tags.
+
+```
+clevver archive 3b7f769a-c8ee-4625-8609-d562b5abd2ac
+```
+
+## Tags
+
+### `clevver tags`
+List all tags.
+
+```
+clevver tags
+```
+
+### `clevver tag <file-id>`
+Manage tags on a file. Exactly one mode flag is required.
+
+```
+clevver tag 3b7f769a --add "photos, vacation"
+clevver tag 3b7f769a --set "photos, travel"
+clevver tag 3b7f769a --remove "vacation"
+```
+
+| Flag | Description |
+|------|-------------|
+| `--add` | Add tags (keeps existing) |
+| `--set` | Replace all tags |
+| `--remove` | Remove specific tags |
+
+## Global Flags
+
+| Flag | Description |
+|------|-------------|
+| `--json` | Output as JSON |
+| `--api-url` | Override API base URL |

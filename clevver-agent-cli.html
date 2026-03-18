@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clevver Agent CLI — Permanent File Storage for AI Agents</title>
+    <meta name="description" content="Give your AI agent permanent file storage with Clevver CLI. Store, fetch, tag, and manage files from any AI agent. One-line install. AES-256 encrypted.">
+    <link rel="canonical" href="https://clevver.org/clevver-agent-cli.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clevver.org/clevver-agent-cli.html">
+    <meta property="og:title" content="Clevver Agent CLI — Permanent File Storage for AI Agents">
+    <meta property="og:description" content="Give your AI agent permanent file storage. Store, fetch, tag, and manage files with a simple CLI. AES-256 encrypted.">
+    <meta property="og:image" content="https://get.clevver.org/2e0cb655b8019757fe288d6d9509e78bdf510b3517c82f8941f3e772ed0b0fcb.png">
+    <meta property="og:site_name" content="Clevver">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Clevver Agent CLI — Permanent File Storage for AI Agents">
+    <meta name="twitter:description" content="Give your AI agent permanent file storage. Store, fetch, tag, and manage files with a simple CLI. AES-256 encrypted.">
+    <meta name="twitter:image" content="https://get.clevver.org/2e0cb655b8019757fe288d6d9509e78bdf510b3517c82f8941f3e772ed0b0fcb.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,6 +29,48 @@
     <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
     <script>
         (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Clevver CLI",
+      "url": "https://clevver.org/clevver-agent-cli.html",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux",
+      "description": "Command-line tool that gives AI agents permanent file storage. Store, fetch, list, tag, and archive files with simple CLI commands.",
+      "installUrl": "https://clevver.plnk.dev/install.sh",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "First 5 MB free. Pay-once pricing for additional storage."
+      },
+      "featureList": [
+        "clevver store - Upload files",
+        "clevver fetch - Download files",
+        "clevver ls - List files with filtering",
+        "clevver tag - Manage file tags",
+        "clevver archive - Soft-delete files",
+        "clevver login/logout - Authentication",
+        "clevver whoami - Show user and quota",
+        "AES-256 encryption",
+        "JSON output mode",
+        "Works with any AI agent"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Clevver", "item": "https://clevver.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Agent CLI", "item": "https://clevver.org/clevver-agent-cli.html" }
+      ]
+    }
     </script>
     <style>
         .page-content {
@@ -440,8 +499,113 @@
         </div>
     </section>
 
+    <!-- Clevver CLI Skills — visually hidden, crawlable by search engines and AI bots -->
+    <div class="sr-only" aria-label="Clevver CLI Skills Reference">
+        <h2>Clevver CLI Skills</h2>
+
+        <h3>Authentication</h3>
+        <h4>clevver login</h4>
+        <p>Authenticate with Clevver. Prompts interactively for credentials if not provided via flags.</p>
+        <p>Usage: clevver login | clevver login --email user@example.com --password secret</p>
+        <p>Flags: --email (Email address), --password (Password)</p>
+
+        <h4>clevver logout</h4>
+        <p>Clear stored credentials and sign out.</p>
+        <p>Usage: clevver logout</p>
+
+        <h4>clevver whoami</h4>
+        <p>Show current user and storage quota.</p>
+        <p>Usage: clevver whoami</p>
+
+        <h3>Files</h3>
+        <h4>clevver store</h4>
+        <p>Upload a file to Clevver.</p>
+        <p>Usage: clevver store report.pdf | clevver store photo.png --tags "photos, vacation"</p>
+        <p>Flags: --tags (Comma-separated tags to attach)</p>
+
+        <h4>clevver fetch</h4>
+        <p>Download a file from Clevver.</p>
+        <p>Usage: clevver fetch file-id | clevver fetch file-id -o report.pdf | clevver fetch file-id --stdout</p>
+        <p>Flags: -o/--output (Output file path, defaults to original filename), --stdout (Print file contents to stdout)</p>
+
+        <h4>clevver ls</h4>
+        <p>List files with optional filtering and pagination.</p>
+        <p>Usage: clevver ls | clevver ls --tags "photos" | clevver ls --archived | clevver ls --page 2</p>
+        <p>Flags: --tags (Filter by comma-separated tags), --archived (Show archived files), --page (Page number, default 1)</p>
+
+        <h4>clevver archive</h4>
+        <p>Archive (soft-delete) a file. Warning: this strips all tags.</p>
+        <p>Usage: clevver archive file-id</p>
+
+        <h3>Tags</h3>
+        <h4>clevver tags</h4>
+        <p>List all tags.</p>
+        <p>Usage: clevver tags</p>
+
+        <h4>clevver tag</h4>
+        <p>Manage tags on a file. Exactly one mode flag is required.</p>
+        <p>Usage: clevver tag file-id --add "photos, vacation" | clevver tag file-id --set "photos, travel" | clevver tag file-id --remove "vacation"</p>
+        <p>Flags: --add (Add tags, keeps existing), --set (Replace all tags), --remove (Remove specific tags)</p>
+
+        <h3>Global Flags</h3>
+        <p>--json (Output as JSON), --api-url (Override API base URL)</p>
+    </div>
+
     <!-- Footer -->
-    <div id="site-footer"></div>
+    <div id="site-footer">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://get.clevver.org/786a334a9bc7509686ada1990b43777366ef28031a0944d296b3e9172fbb0cab.png" alt="Clevver" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Permanent encrypted storage for your AI work. Save once, access forever.</p>
+                    <div class="footer-contact">
+                        <a href="mailto:sales@clevver.org">sales@clevver.org</a>
+                        <a href="tel:+1-855-335-7284">(855) 335-7284</a>
+                        <a href="https://bsky.app/profile/clevver.org" target="_blank" rel="noopener noreferrer">Join us on Bluesky</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#solutions">Features</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="index.html#compliance">Compliance</a></li>
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="https://stats.uptimerobot.com/jBmX1iYk3l/" target="_blank" rel="noopener noreferrer">Status</a></li>
+                            <li><a href="#" class="open-typeform">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+                            <li><a href="hipaa.html">HIPAA Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyrightYear"></span> Deliverypath Wireless, LLC. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">AES-256 Encrypted</span>
+                    <span class="badge">Permanent Storage</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
 
     <script src="script.js"></script>
     <script src="//embed.typeform.com/next/embed.js"></script>
