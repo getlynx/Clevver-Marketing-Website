@@ -1717,10 +1717,20 @@ ul {
 
     .security-card {
         order: 1;
+        align-self: center;
     }
 
     .security-features-right {
         order: -1;
+    }
+
+    .security-grid {
+        gap: var(--space-lg);
+    }
+
+    .security-visual-inner {
+        gap: var(--space-lg);
+        align-items: stretch;
     }
     
     .compliance-grid {
