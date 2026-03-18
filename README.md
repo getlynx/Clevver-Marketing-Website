@@ -1,6 +1,14 @@
 # Clevver Marketing Website
 
-A professional marketing landing page for [Clevver](https://clevver.org) — a permanent, encrypted document storage platform powered by distributed ledger technology.
+A marketing landing page for [Clevver](https://clevver.org) — a permanent, encrypted document storage platform powered by distributed ledger technology.
+
+Clevver is accessible through multiple interfaces to serve different user needs:
+
+- **Website** — Interactive web interface for manual document management and interaction
+- **Desktop App** — Native application for convenient access beyond the browser with full platform functionality
+- **API** — RESTful API for application developers to integrate permanent encrypted storage into their applications
+- **SKILL File** — Standardized skill definition for seamless integration into AI workflows and automation systems
+- **CLI for AI Agents** — Command-line interface designed for AI developers and agents to build intelligent applications and robust automation workflows
 
 ## Overview
 
