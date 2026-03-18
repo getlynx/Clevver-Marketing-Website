@@ -16,13 +16,13 @@ Clevver is a permanent, encrypted document storage platform that serves consumer
 
 Unlike traditional cloud storage systems that require constant energy-intensive replication, migration, and server maintenance, Clevver's distributed architecture encodes documents across open source blockchains via the Lynx Data Storage network. This approach significantly reduces energy consumption and carbon emissions associated with document storage, making Clevver an eco-friendly choice for long-term document preservation.
 
-### For Everyone (Consumers & Individual Users)
+### For Everyone
 
-Clevver makes it easy for regular users to store important documents permanently and securely. Whether you're keeping personal records, contracts, photos, or files you want to preserve forever, Clevver handles the heavy lifting. Your documents are encrypted automatically before storage, so only you can read them. Upload once, pay a small one-time fee based on file size, and access your documents anytime without monthly bills or recurring charges.
+Clevver makes it easy for regular users to store important documents permanently and securely. Whether you're keeping personal records, contracts, photos, or files you want to preserve forever, Clevver handles the heavy lifting. Your documents are encrypted automatically before storage, so only you can read them. Purchase storage quota in advance, upload once, and access your documents anytime without monthly bills or recurring charges.
 
 ### For Developers
 
-Developers can integrate Clevver's powerful API into their applications to add permanent encrypted storage capabilities. The platform provides flexible APIs for batch processing, automated workflows, and custom integrations. Developers appreciate the straightforward one-time pricing model, comprehensive documentation, and the ability to build storage features into their apps without complex backend infrastructure.
+Developers can integrate Clevver's powerful API and AI CLI Agent into their applications to add permanent encrypted storage capabilities. The platform provides flexible APIs for batch processing, automated workflows, and custom integrations. Developers appreciate the straightforward one-time pricing model, comprehensive documentation, and the ability to build storage features into their apps without complex backend infrastructure.
 
 ### For Businesses
 
