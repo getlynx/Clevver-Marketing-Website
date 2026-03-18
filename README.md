@@ -12,9 +12,9 @@ Clevver is accessible through multiple interfaces to serve different user needs:
 
 ## Overview
 
-Clevver is a permanent, encrypted document storage platform that serves consumers, developers, businesses, and enterprises. The platform stores documents once with a one-time fee and keeps them accessible forever at no additional cost. Built on efficient distributed ledger technology, Clevver ensures your documents are secure, permanent, and always available when you need them—while maintaining an environmentally conscious approach to data storage.
+Clevver is a permanent, encrypted document storage platform that serves consumers, developers, businesses, and enterprises. The platform is designed to store documents for 500 years, keeping them accessible with a one-time fee and no additional costs. Built on efficient distributed ledger technology, Clevver ensures your documents are secure, permanent, and always available when you need them—while maintaining an environmentally conscious approach to data storage.
 
-Unlike traditional cloud storage systems that require constant energy-intensive replication, migration, and server maintenance, Clevver's distributed architecture stores documents once and keeps them permanently without unnecessary data movement or redundant copies. This approach significantly reduces energy consumption and carbon emissions associated with document storage, making Clevver an eco-friendly choice for long-term document preservation.
+Unlike traditional cloud storage systems that require constant energy-intensive replication, migration, and server maintenance, Clevver's distributed architecture encodes documents across open source blockchains via the Lynx Data Storage network. This approach significantly reduces energy consumption and carbon emissions associated with document storage, making Clevver an eco-friendly choice for long-term document preservation.
 
 ### For Everyone (Consumers & Individual Users)
 
@@ -34,7 +34,7 @@ Enterprise organizations get scalable, secure document management with custom AP
 
 **Key value propositions:**
 
-- **Permanent storage** — Documents stored securely and permanently for centuries
+- **Permanent storage** — Documents designed to be stored securely and permanently for 500 years
 - **Automatic encryption** — All documents encrypted with industry-standard AES-256 before storage
 - **One-time pricing** — Pay once to store, retrieve for free forever with no hidden fees
 - **Zero-knowledge security** — Clevver cannot access your encrypted documents
