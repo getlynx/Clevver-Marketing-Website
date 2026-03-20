@@ -131,15 +131,21 @@
         }
         .contract-field {
             display: inline-block;
-            min-width: 180px;
+            min-width: 300px;
             border-bottom: 2px solid var(--color-accent);
-            padding: 2px 6px;
+            padding: 4px 8px;
             font-weight: 600;
             color: var(--color-primary);
             background: rgba(212, 165, 116, 0.08);
+            min-height: 1.5em;
         }
         .contract-field-short {
-            min-width: 80px;
+            min-width: 120px;
+        }
+        .contract-field-wide {
+            min-width: 100%;
+            display: block;
+            margin-top: var(--space-xs);
         }
         .preamble-party {
             margin: var(--space-lg) 0;
@@ -295,11 +301,18 @@
                 <p>This Platform Services Agreement ("Agreement") is entered into as of <span class="contract-field">&nbsp;</span> ("Effective Date") by and between:</p>
 
                 <div class="preamble-party">
-                    <p><strong>Provider:</strong> Deliverypath Wireless, LLC, a North Carolina limited liability company doing business as Clevver, with its principal place of business at sales@clevver.org, (855) 335-7284 ("Clevver" or "Provider").</p>
+                    <p><strong>Provider:</strong> Deliverypath Wireless, LLC, a North Carolina limited liability company doing business as Clevver, with its principal place of business at 500 Westover Drive #35147, Sanford, NC 27330, United States ("Clevver" or "Provider").</p>
                 </div>
 
                 <div class="preamble-party">
-                    <p><strong>Customer:</strong> <span class="contract-field">&nbsp;</span>, a <span class="contract-field contract-field-short">&nbsp;</span> <span class="contract-field contract-field-short">&nbsp;</span>, with its principal place of business at <span class="contract-field">&nbsp;</span> ("Customer").</p>
+                    <p><strong>Customer:</strong></p>
+                    <p>Legal Entity Name: <span class="contract-field contract-field-wide">&nbsp;</span></p>
+                    <p>Entity Type (e.g., Corporation, LLC, Partnership): <span class="contract-field">&nbsp;</span></p>
+                    <p>State/Jurisdiction of Formation: <span class="contract-field">&nbsp;</span></p>
+                    <p>Principal Business Address: <span class="contract-field contract-field-wide">&nbsp;</span></p>
+                    <p>City, State, ZIP Code: <span class="contract-field contract-field-wide">&nbsp;</span></p>
+                    <p>Country: <span class="contract-field">&nbsp;</span></p>
+                    <p>(hereinafter referred to as "Customer")</p>
                 </div>
 
                 <p>Clevver and Customer are each referred to herein as a "Party" and collectively as the "Parties."</p>
