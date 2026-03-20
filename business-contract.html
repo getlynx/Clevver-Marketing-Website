@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevver — Business Customer Contract | Platform Services Agreement</title>
+    <meta name="description" content="Clevver Platform Services Agreement for Business and Enterprise customers. Formal contract for API and Agent CLI access with SLA guarantees.">
+    <link rel="canonical" href="https://clevver.org/business-contract.html">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clevver.org/business-contract.html">
+    <meta property="og:title" content="Clevver — Platform Services Agreement">
+    <meta property="og:description" content="Formal contract for Business and Enterprise customers using the Clevver API and Agent CLI.">
+    <meta property="og:image" content="https://get.clevver.org/2e0cb655b8019757fe288d6d9509e78bdf510b3517c82f8941f3e772ed0b0fcb.png">
+    <meta property="og:site_name" content="Clevver">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Platform Services Agreement — Clevver">
+    <meta name="twitter:description" content="Formal contract for Business and Enterprise customers using the Clevver API and Agent CLI.">
+    <meta name="twitter:image" content="https://get.clevver.org/2e0cb655b8019757fe288d6d9509e78bdf510b3517c82f8941f3e772ed0b0fcb.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Platform Services Agreement",
+      "url": "https://clevver.org/business-contract.html",
+      "description": "Clevver Platform Services Agreement for Business and Enterprise customers.",
+      "isPartOf": { "@type": "WebSite", "name": "Clevver", "url": "https://clevver.org" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Clevver", "item": "https://clevver.org/" },
+          { "@type": "ListItem", "position": 2, "name": "Platform Services Agreement", "item": "https://clevver.org/business-contract.html" }
+        ]
+      }
+    }
+    </script>
+    <style>
+        .page-content {
+            padding-top: calc(80px + var(--space-2xl));
+            padding-bottom: var(--space-2xl);
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        .page-header .section-subtitle {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .prose {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .prose h2 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-md);
+        }
+        .prose h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--color-text-primary);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-sm);
+        }
+        .prose p, .prose li {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: var(--color-text-secondary);
+        }
+        .prose ul {
+            list-style: none;
+            padding: 0;
+        }
+        .prose ul li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: var(--space-xs);
+        }
+        .prose ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--color-accent);
+        }
+        .prose ol {
+            list-style: none;
+            padding: 0;
+            counter-reset: clause;
+        }
+        .prose ol > li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: var(--space-sm);
+        }
+        .prose ol > li::before {
+            content: "(" counter(clause, lower-alpha) ")";
+            counter-increment: clause;
+            position: absolute;
+            left: 0;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        .effective-date {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            text-align: center;
+            margin-top: var(--space-sm);
+        }
+        .contract-field {
+            display: inline-block;
+            min-width: 180px;
+            border-bottom: 2px solid var(--color-accent);
+            padding: 2px 6px;
+            font-weight: 600;
+            color: var(--color-primary);
+            background: rgba(212, 165, 116, 0.08);
+        }
+        .contract-field-short {
+            min-width: 80px;
+        }
+        .preamble-party {
+            margin: var(--space-lg) 0;
+            padding: var(--space-md) var(--space-lg);
+            border-left: 3px solid var(--color-accent);
+            background: rgba(212, 165, 116, 0.04);
+        }
+        .recitals {
+            font-style: italic;
+            margin: var(--space-lg) 0;
+        }
+        .sla-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-lg) 0;
+            font-size: 0.95rem;
+        }
+        .sla-table th,
+        .sla-table td {
+            padding: var(--space-sm) var(--space-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+        }
+        .sla-table th {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        .caps-text {
+            text-transform: uppercase;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+        .signature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 2px solid var(--color-border);
+        }
+        .signature-block {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        .signature-block h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        .signature-field {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+        .signature-line {
+            border-bottom: 1px solid var(--color-text-primary);
+            min-height: 40px;
+        }
+        .signature-label {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+        .exhibit-header {
+            text-align: center;
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-2xl);
+            border-top: 3px double var(--color-border);
+        }
+        .exhibit-field-group {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: var(--space-sm) var(--space-lg);
+            align-items: end;
+            margin: var(--space-md) 0;
+        }
+        .exhibit-label {
+            font-weight: 600;
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+        }
+        .exhibit-value {
+            border-bottom: 1px solid var(--color-border);
+            min-height: 28px;
+            padding: 2px 4px;
+        }
+        @media (max-width: 768px) {
+            .signature-grid {
+                grid-template-columns: 1fr;
+            }
+            .exhibit-field-group {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print {
+            .nav, #site-footer, .dark-mode-toggle, .mobile-menu-btn { display: none !important; }
+            .page-content { padding-top: 0; }
+            .contract-field { border-bottom-style: dotted; }
+            .prose h2 { break-after: avoid; }
+            .signature-grid { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://get.clevver.org/2e0cb655b8019757fe288d6d9509e78bdf510b3517c82f8941f3e772ed0b0fcb.png" alt="Clevver" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://app.clevver.org/login" class="btn btn-ghost">Sign In</a>
+                <button class="btn btn-primary open-typeform">Schedule Demo</button>
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode"><svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"/></svg></button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#compliance">Compliance</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="https://app.clevver.org/login" class="btn btn-ghost btn-full">Sign In</a>
+                <button class="btn btn-primary btn-full open-typeform">Schedule Demo</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="section-title">Platform Services Agreement</h1>
+                <p class="section-subtitle">Business and Enterprise Customer Contract for API and Agent CLI Services</p>
+                <p class="effective-date">Contract No. <span class="contract-field contract-field-short">&nbsp;</span></p>
+            </div>
+
+            <div class="prose">
+
+                <!-- PREAMBLE -->
+                <p>This Platform Services Agreement ("Agreement") is entered into as of <span class="contract-field">&nbsp;</span> ("Effective Date") by and between:</p>
+
+                <div class="preamble-party">
+                    <p><strong>Provider:</strong> Deliverypath Wireless, LLC, a North Carolina limited liability company doing business as Clevver, with its principal place of business at sales@clevver.org, (855) 335-7284 ("Clevver" or "Provider").</p>
+                </div>
+
+                <div class="preamble-party">
+                    <p><strong>Customer:</strong> <span class="contract-field">&nbsp;</span>, a <span class="contract-field contract-field-short">&nbsp;</span> <span class="contract-field contract-field-short">&nbsp;</span>, with its principal place of business at <span class="contract-field">&nbsp;</span> ("Customer").</p>
+                </div>
+
+                <p>Clevver and Customer are each referred to herein as a "Party" and collectively as the "Parties."</p>
+
+                <div class="recitals">
+                    <p><strong>WHEREAS,</strong> Clevver operates a permanent encrypted document storage platform built on distributed ledger technology, providing AES-256 encryption, zero-knowledge architecture, and permanent file storage services;</p>
+                    <p><strong>WHEREAS,</strong> Customer desires to access and use the Clevver Platform Services, including the API and Agent CLI, for its business purposes under the terms and conditions set forth herein;</p>
+                    <p><strong>NOW, THEREFORE,</strong> in consideration of the mutual covenants and agreements contained herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties agree as follows:</p>
+                </div>
+
+                <!-- ARTICLE 1: DEFINITIONS -->
+                <h2>Article 1: Definitions</h2>
+                <p>The following terms shall have the meanings set forth below when used in this Agreement:</p>
+                <ul>
+                    <li><strong>"Acceptable Use Policy" or "AUP"</strong> means the content restrictions and usage rules set forth in the Terms of Service.</li>
+                    <li><strong>"Agent CLI"</strong> means the Clevver command-line interface tool for AI agent automation, including the <code>clevver store</code>, <code>clevver fetch</code>, <code>clevver ls</code>, <code>clevver tag</code>, <code>clevver archive</code>, and related commands.</li>
+                    <li><strong>"API"</strong> means the Clevver RESTful Application Programming Interface for programmatic access to the Platform, including batch processing capabilities.</li>
+                    <li><strong>"Asset"</strong> means any digital file or content uploaded to and stored on the Platform by Customer or its Authorized Users.</li>
+                    <li><strong>"Authorized Users"</strong> means Customer's employees, contractors, and agents who are authorized by Customer to access and use the Platform Services under this Agreement.</li>
+                    <li><strong>"Confidential Information"</strong> has the meaning set forth in Article 10.</li>
+                    <li><strong>"Customer Data"</strong> means all data, files, and content uploaded to the Platform by Customer or its Authorized Users, including all Assets.</li>
+                    <li><strong>"Exhibit A"</strong> means the Order Form attached hereto and incorporated by reference, specifying storage quantities, pricing, service levels, and any custom terms.</li>
+                    <li><strong>"Fees"</strong> means the one-time payments, recurring fees, and any other charges payable by Customer as set forth in Exhibit A.</li>
+                    <li><strong>"Intellectual Property Rights"</strong> means all patents, copyrights, trademarks, trade secrets, and all other intellectual property rights recognized under applicable law.</li>
+                    <li><strong>"Permanent URL"</strong> means the unique, shareable, non-expiring URL assigned to each Asset stored on the Platform.</li>
+                    <li><strong>"Platform"</strong> means the Clevver permanent encrypted document storage platform accessible at clevver.org and through the API and Agent CLI.</li>
+                    <li><strong>"Platform Services"</strong> means the API, Agent CLI, web application, desktop application, and all related services and documentation provided by Clevver.</li>
+                    <li><strong>"Service Level Agreement" or "SLA"</strong> means the uptime and performance commitments set forth in Article 4.</li>
+                    <li><strong>"Storage Quota"</strong> means the amount of storage capacity purchased by Customer as specified in Exhibit A.</li>
+                    <li><strong>"Term"</strong> means the duration of this Agreement as set forth in Article 6.</li>
+                    <li><strong>"Terms of Service" or "ToS"</strong> means the Clevver Terms of Service Agreement available at <a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement</a>.</li>
+                </ul>
+
+                <!-- ARTICLE 2: SCOPE OF SERVICES -->
+                <h2>Article 2: Scope of Services</h2>
+
+                <h3>2.1 Platform Access</h3>
+                <p>Subject to the terms of this Agreement, Clevver grants Customer a non-exclusive, non-transferable, non-sublicensable right to access and use the Platform Services during the Term for Customer's internal business purposes.</p>
+
+                <h3>2.2 API Access</h3>
+                <p>Customer shall receive full access to the Clevver RESTful API for programmatic storage, retrieval, tagging, and management of Assets. Batch processing capabilities are included as part of the API access.</p>
+
+                <h3>2.3 Agent CLI Access</h3>
+                <p>Customer shall receive access to the Clevver Agent CLI for AI agent automation workflows, including store, fetch, list, tag, and archive operations. Customer may deploy the Agent CLI across its Authorized Users' environments.</p>
+
+                <h3>2.4 Core Platform Features</h3>
+                <p>The Platform Services include the following core features:</p>
+                <ol>
+                    <li>AES-256 encryption applied to all stored Assets by default</li>
+                    <li>Zero-knowledge architecture ensuring Clevver cannot access encrypted Asset contents</li>
+                    <li>Permanent, immutable storage of all Assets</li>
+                    <li>Tag-based organization with up to 100 tags per Asset</li>
+                    <li>Shareable Permanent URLs that never expire</li>
+                    <li>Free retrieval of stored Assets in perpetuity</li>
+                </ol>
+
+                <h3>2.5 Dedicated Account Manager</h3>
+                <p>Clevver shall assign a dedicated account manager to Customer for onboarding, ongoing support, and custom integration assistance. The account manager shall serve as Customer's primary point of contact.</p>
+
+                <h3>2.6 Custom Integration Support</h3>
+                <p>Clevver shall provide reasonable custom integration support as described in Exhibit A, including assistance with API integration, Agent CLI deployment, and workflow configuration.</p>
+
+                <h3>2.7 Modifications to Services</h3>
+                <p>Clevver may modify the Platform Services at any time, provided that such modifications do not materially diminish the core functionality described in Section 2.4 during the Term. Clevver shall provide Customer with at least thirty (30) days' prior written notice of any material changes to the Platform Services.</p>
+
+                <!-- ARTICLE 3: TERMS OF SERVICE INCORPORATION -->
+                <h2>Article 3: Terms of Service Incorporation</h2>
+
+                <h3>3.1 Incorporation by Reference</h3>
+                <p>The Clevver Terms of Service, available at <a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement</a>, are incorporated into this Agreement by reference. Customer agrees to comply with all provisions of the ToS in its use of the Platform Services.</p>
+
+                <h3>3.2 Order of Precedence</h3>
+                <p>In the event of any conflict or inconsistency between the terms of this Agreement and the Terms of Service, the terms of this Agreement shall control to the extent of such conflict.</p>
+
+                <h3>3.3 Key Acknowledgments</h3>
+                <p>Customer specifically acknowledges and agrees to the following provisions of the Terms of Service:</p>
+                <ol>
+                    <li>All Assets stored on the Platform are stored permanently using distributed ledger technology and cannot be deleted or modified after upload;</li>
+                    <li>All payments made to Clevver are final and non-refundable;</li>
+                    <li>Customer shall comply with all prohibited content restrictions set forth in the ToS;</li>
+                    <li>Clevver reserves the right to throttle bandwidth at its sole discretion; and</li>
+                    <li>Clevver may make Assets permanently inaccessible for violations of the ToS without prior notice or refund.</li>
+                </ol>
+
+                <!-- ARTICLE 4: SERVICE LEVEL AGREEMENT -->
+                <h2>Article 4: Service Level Agreement</h2>
+
+                <h3>4.1 Uptime Commitment</h3>
+                <p>Clevver commits to maintaining <span class="contract-field contract-field-short">99.9%</span> monthly uptime for the API endpoints and Platform retrieval services ("Uptime Commitment"). Uptime is measured as the percentage of total minutes in a calendar month during which the Platform Services are operational and accessible. Platform status is publicly available at <a href="https://stats.uptimerobot.com/jBmX1iYk3l/" target="_blank" rel="noopener noreferrer">https://stats.uptimerobot.com/jBmX1iYk3l/</a>.</p>
+
+                <h3>4.2 Exclusions</h3>
+                <p>The following events are excluded from the Uptime Commitment calculation:</p>
+                <ol>
+                    <li>Scheduled maintenance windows, for which Clevver shall provide at least forty-eight (48) hours' prior written notice;</li>
+                    <li>Force majeure events as described in Article 14;</li>
+                    <li>Outages or performance degradation caused by Customer's equipment, software, or network connectivity;</li>
+                    <li>Failures of third-party services, internet service providers, or telecommunications infrastructure outside Clevver's reasonable control; and</li>
+                    <li>Periods during which Customer's access is suspended due to a breach of this Agreement or the ToS.</li>
+                </ol>
+
+                <h3>4.3 Service Level Credits</h3>
+                <p>If Clevver fails to meet the Uptime Commitment in any calendar month, Customer shall be entitled to service credits as set forth in the following table:</p>
+                <table class="sla-table">
+                    <thead>
+                        <tr>
+                            <th>Monthly Uptime Percentage</th>
+                            <th>Service Credit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>99.0% &ndash; below Uptime Commitment</td>
+                            <td>10% of applicable monthly Fees</td>
+                        </tr>
+                        <tr>
+                            <td>95.0% &ndash; 98.99%</td>
+                            <td>25% of applicable monthly Fees</td>
+                        </tr>
+                        <tr>
+                            <td>Below 95.0%</td>
+                            <td>50% of applicable monthly Fees</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For one-time storage purchases, "applicable monthly Fees" shall be calculated as the total one-time Fees divided by the number of months in the Initial Term. For recurring Fees, the actual monthly amount shall apply.</p>
+
+                <h3>4.4 Credit Request Procedure</h3>
+                <p>Customer must submit a written request for service credits within thirty (30) days after the end of the month in which the Uptime Commitment was not met. Service credits shall be applied to future purchases or invoices and are not redeemable for cash refunds.</p>
+
+                <h3>4.5 Maximum Credits</h3>
+                <p>Total service credits in any twelve (12) month period shall not exceed <span class="contract-field contract-field-short">30%</span> of total Fees paid or payable by Customer in such period.</p>
+
+                <h3>4.6 Performance Targets</h3>
+                <p>Clevver shall use commercially reasonable efforts to maintain API response times of less than <span class="contract-field contract-field-short">500ms</span> at the 95th percentile for standard operations (store, fetch, list, tag).</p>
+
+                <h3>4.7 Support Response Times</h3>
+                <p>Clevver shall respond to Customer support requests in accordance with the following priority levels:</p>
+                <table class="sla-table">
+                    <thead>
+                        <tr>
+                            <th>Priority</th>
+                            <th>Description</th>
+                            <th>Response Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Critical</strong></td>
+                            <td>Platform completely unavailable; all operations affected</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High</strong></td>
+                            <td>Major feature degraded; significant business impact</td>
+                            <td>4 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medium</strong></td>
+                            <td>Non-critical issue; workaround available</td>
+                            <td>1 business day</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Low</strong></td>
+                            <td>General inquiry or feature request</td>
+                            <td>2 business days</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ARTICLE 5: PAYMENT TERMS -->
+                <h2>Article 5: Payment Terms</h2>
+
+                <h3>5.1 Fee Structure</h3>
+                <p>Customer shall pay the Fees as set forth in Exhibit A. Fees may include one or both of the following components, as specified in Exhibit A:</p>
+                <ol>
+                    <li><strong>One-Time Storage Fees:</strong> A single payment for a specified Storage Quota, with no recurring subscription charges for storage; and/or</li>
+                    <li><strong>Recurring Service Fees:</strong> Monthly fees for ongoing API access, Agent CLI licensing, dedicated support, or other recurring services as described in Exhibit A.</li>
+                </ol>
+
+                <h3>5.2 Invoicing</h3>
+                <p>Clevver shall invoice Customer in accordance with the payment schedule set forth in Exhibit A. For one-time Fees, Clevver shall invoice upon execution of this Agreement unless otherwise specified. For recurring Fees, Clevver shall invoice monthly in advance.</p>
+
+                <h3>5.3 Payment Terms</h3>
+                <p>All invoices are due and payable within <span class="contract-field contract-field-short">Net 30</span> days of the invoice date. Payment shall be made in United States Dollars by check, wire transfer, ACH, or other method agreed upon by the Parties.</p>
+
+                <h3>5.4 Late Payment</h3>
+                <p>Overdue amounts shall accrue interest at the rate of one and one-half percent (1.5%) per month, or the maximum rate permitted by applicable law, whichever is less. Customer shall also be responsible for all reasonable costs of collection, including attorneys' fees, incurred by Clevver in collecting overdue amounts.</p>
+
+                <h3>5.5 Taxes</h3>
+                <p>All Fees are exclusive of applicable taxes, duties, and governmental assessments. Customer shall be responsible for all applicable sales, use, value-added, and other taxes arising from this Agreement, excluding taxes based on Clevver's net income.</p>
+
+                <h3>5.6 Non-Refundable</h3>
+                <p>Consistent with the Terms of Service, all payments made under this Agreement are final and non-refundable, except for service credits issued pursuant to Article 4.</p>
+
+                <h3>5.7 Price Protection</h3>
+                <p>Clevver may modify its pricing for future purchases at any time. However, pricing for Storage Quota already purchased and recurring Fees already agreed upon under this Agreement shall not be increased during the then-current Term, unless mutually agreed in writing.</p>
+
+                <h3>5.8 Quota Expiration</h3>
+                <p>Unused Storage Quota purchased as a one-time Fee shall expire three (3) years from the date of purchase, consistent with the Terms of Service. Clevver shall provide Customer with written notice at least ninety (90) days prior to any quota expiration.</p>
+
+                <!-- ARTICLE 6: TERM AND TERMINATION -->
+                <h2>Article 6: Term and Termination</h2>
+
+                <h3>6.1 Initial Term</h3>
+                <p>This Agreement shall commence on the Effective Date and shall continue for a period of <span class="contract-field contract-field-short">&nbsp;</span> ("Initial Term"), unless earlier terminated in accordance with this Article 6.</p>
+
+                <h3>6.2 Renewal</h3>
+                <p>Upon expiration of the Initial Term, this Agreement shall automatically renew for successive periods of <span class="contract-field contract-field-short">&nbsp;</span> each ("Renewal Term"), unless either Party provides written notice of non-renewal at least sixty (60) days prior to the expiration of the then-current Term.</p>
+
+                <h3>6.3 Termination for Cause</h3>
+                <p>Either Party may terminate this Agreement upon thirty (30) days' written notice to the other Party if the other Party materially breaches any provision of this Agreement and fails to cure such breach within the thirty (30) day notice period.</p>
+
+                <h3>6.4 Termination for Convenience</h3>
+                <p>Either Party may terminate this Agreement for convenience upon ninety (90) days' prior written notice to the other Party.</p>
+
+                <h3>6.5 Effect of Termination</h3>
+                <p>Upon termination or expiration of this Agreement:</p>
+                <ol>
+                    <li>Customer's right to access the API and Agent CLI shall immediately cease;</li>
+                    <li>Customer Data already stored on the Platform shall remain permanently stored and accessible via Permanent URLs, as the Platform's immutable storage architecture does not permit deletion;</li>
+                    <li>No refunds shall be issued for Fees already paid;</li>
+                    <li>Each Party shall return or destroy the other Party's Confidential Information in its possession, except as required by law or as necessary for the surviving provisions of this Agreement; and</li>
+                    <li>All outstanding invoices shall become immediately due and payable.</li>
+                </ol>
+
+                <h3>6.6 Survival</h3>
+                <p>Articles 1 (Definitions), 3.3 (Key Acknowledgments), 5.6 (Non-Refundable), 8 (Data Security and Encryption), 9 (Intellectual Property), 10 (Confidentiality), 11 (Limitation of Liability and Indemnification), 12 (Warranties and Disclaimers), 13 (Governing Law and Dispute Resolution), and 15 (General Provisions) shall survive any termination or expiration of this Agreement.</p>
+
+                <!-- ARTICLE 7: ACCEPTABLE USE -->
+                <h2>Article 7: Acceptable Use</h2>
+
+                <h3>7.1 Compliance with AUP</h3>
+                <p>Customer shall comply, and shall ensure that all Authorized Users comply, with the Acceptable Use Policy set forth in the Terms of Service.</p>
+
+                <h3>7.2 Prohibited Content</h3>
+                <p>Without limiting the generality of Section 7.1, Customer shall not store or permit the storage of any Asset containing:</p>
+                <ol>
+                    <li>Pornographic or sexually explicit material;</li>
+                    <li>Graphic violence or content promoting violence;</li>
+                    <li>Hate speech targeting protected characteristics;</li>
+                    <li>Material that infringes third-party intellectual property rights, including pirated software;</li>
+                    <li>Disinformation campaigns or cyberbullying material; or</li>
+                    <li>Any content prohibited by applicable law or the Terms of Service.</li>
+                </ol>
+
+                <h3>7.3 Enforcement</h3>
+                <p>Clevver reserves the right to make any Asset permanently inaccessible if, in its sole discretion, it determines that the Asset violates the AUP or this Agreement. Such enforcement may occur without prior notice or refund, consistent with the Terms of Service.</p>
+
+                <h3>7.4 Customer Responsibility</h3>
+                <p>Customer is solely responsible for ensuring that all Authorized Users comply with this Article 7 and shall indemnify Clevver against any claims arising from the failure of its Authorized Users to comply.</p>
+
+                <h3>7.5 Bandwidth</h3>
+                <p>Clevver reserves the right to throttle bandwidth at its sole discretion to maintain platform stability and performance, consistent with the Terms of Service. Clevver shall use commercially reasonable efforts to notify Customer prior to any throttling that would materially impact Customer's operations.</p>
+
+                <!-- ARTICLE 8: DATA SECURITY AND ENCRYPTION -->
+                <h2>Article 8: Data Security and Encryption</h2>
+
+                <h3>8.1 Encryption at Rest</h3>
+                <p>All Customer Data stored on the Platform is encrypted with AES-256 encryption at rest. Encryption is mandatory and cannot be disabled.</p>
+
+                <h3>8.2 Zero-Knowledge Architecture</h3>
+                <p>The Platform operates on a zero-knowledge architecture. Clevver cannot access, read, decrypt, or analyze the contents of Customer Data. Only authorized key holders designated by Customer can decrypt stored Assets.</p>
+
+                <h3>8.3 Encryption in Transit</h3>
+                <p>All data transmitted between Customer's systems and the Platform is protected via TLS/SSL encrypted connections.</p>
+
+                <h3>8.4 Customer Security Obligations</h3>
+                <p>Customer is solely responsible for:</p>
+                <ol>
+                    <li>Managing and safeguarding all encryption keys, API credentials, and authentication tokens;</li>
+                    <li>Implementing appropriate access controls to limit Platform access to Authorized Users;</li>
+                    <li>Pre-encrypting any data requiring additional protection (including but not limited to protected health information, personally identifiable information, or other regulated data) before uploading to the Platform; and</li>
+                    <li>Maintaining the security of all systems and environments from which the API or Agent CLI is accessed.</li>
+                </ol>
+
+                <h3>8.5 Permanent Storage Acknowledgment</h3>
+                <p>Customer acknowledges and agrees that all Customer Data stored on the Platform is stored permanently and immutably. Assets cannot be deleted, modified, or overwritten after upload. Customer shall exercise due care before uploading any Asset and shall not upload any data that may need to be erased or modified in the future.</p>
+
+                <h3>8.6 Security Incident Notification</h3>
+                <p>Clevver shall notify Customer in writing of any confirmed security incident that affects the Platform infrastructure within seventy-two (72) hours of Clevver's discovery of such incident. Such notice shall include, to the extent known: the nature of the incident, the data potentially affected, the corrective measures taken, and a point of contact for additional information.</p>
+
+                <!-- ARTICLE 9: INTELLECTUAL PROPERTY -->
+                <h2>Article 9: Intellectual Property</h2>
+
+                <h3>9.1 Clevver Intellectual Property</h3>
+                <p>Clevver retains all right, title, and interest in and to the Platform, API, Agent CLI, documentation, and all related Intellectual Property Rights. Nothing in this Agreement transfers ownership of any Clevver intellectual property to Customer. The rights granted to Customer under this Agreement are limited to a license to use the Platform Services as expressly set forth herein.</p>
+
+                <h3>9.2 Customer Intellectual Property</h3>
+                <p>Customer retains all right, title, and interest in and to Customer Data and all Intellectual Property Rights therein. Clevver acquires no rights in Customer Data except the limited rights expressly granted in Section 9.3.</p>
+
+                <h3>9.3 License to Clevver</h3>
+                <p>Customer grants Clevver a limited, non-exclusive, royalty-free license to store, transmit, and make available Customer Data solely for the purpose of providing the Platform Services in accordance with this Agreement.</p>
+
+                <h3>9.4 Feedback</h3>
+                <p>If Customer provides Clevver with any feedback, suggestions, or recommendations regarding the Platform Services ("Feedback"), Customer hereby grants Clevver a perpetual, irrevocable, royalty-free, worldwide license to use, modify, and incorporate such Feedback into the Platform Services without obligation or compensation to Customer.</p>
+
+                <!-- ARTICLE 10: CONFIDENTIALITY -->
+                <h2>Article 10: Confidentiality</h2>
+
+                <h3>10.1 Definition</h3>
+                <p>"Confidential Information" means all non-public information disclosed by one Party (the "Disclosing Party") to the other Party (the "Receiving Party"), whether disclosed orally, in writing, or by inspection, that is designated as confidential or that a reasonable person would understand to be confidential given the nature of the information and the circumstances of disclosure. Confidential Information includes, without limitation: business plans, financial information, technical data, product roadmaps, pricing, Customer Data, API credentials, and the terms of this Agreement.</p>
+
+                <h3>10.2 Exclusions</h3>
+                <p>Confidential Information does not include information that:</p>
+                <ol>
+                    <li>Is or becomes publicly available through no fault or action of the Receiving Party;</li>
+                    <li>Was already known to the Receiving Party prior to disclosure, as demonstrated by written records;</li>
+                    <li>Is independently developed by the Receiving Party without use of or reference to the Disclosing Party's Confidential Information; or</li>
+                    <li>Is lawfully received by the Receiving Party from a third party without restriction on disclosure.</li>
+                </ol>
+
+                <h3>10.3 Obligations</h3>
+                <p>The Receiving Party shall:</p>
+                <ol>
+                    <li>Protect the Disclosing Party's Confidential Information using at least the same degree of care it uses to protect its own confidential information of a similar nature, but in no event less than reasonable care;</li>
+                    <li>Use the Disclosing Party's Confidential Information solely for the purpose of performing its obligations or exercising its rights under this Agreement; and</li>
+                    <li>Limit disclosure of Confidential Information to its employees, contractors, and agents who have a legitimate need to know and who are bound by confidentiality obligations no less restrictive than those set forth herein.</li>
+                </ol>
+
+                <h3>10.4 Compelled Disclosure</h3>
+                <p>If the Receiving Party is compelled by law, regulation, or legal process to disclose Confidential Information, the Receiving Party shall: (a) provide the Disclosing Party with prompt written notice of such requirement, to the extent legally permitted; (b) cooperate with the Disclosing Party in seeking a protective order or other appropriate remedy; and (c) disclose only the minimum amount of Confidential Information required to comply with the legal obligation.</p>
+
+                <h3>10.5 Duration</h3>
+                <p>The confidentiality obligations set forth in this Article 10 shall survive termination or expiration of this Agreement for a period of three (3) years, except that obligations with respect to trade secrets shall continue for as long as such information qualifies as a trade secret under applicable law.</p>
+
+                <!-- ARTICLE 11: LIMITATION OF LIABILITY AND INDEMNIFICATION -->
+                <h2>Article 11: Limitation of Liability and Indemnification</h2>
+
+                <h3>11.1 Limitation of Liability</h3>
+                <p class="caps-text">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER PARTY'S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL EXCEED THE TOTAL FEES PAID OR PAYABLE BY CUSTOMER UNDER THIS AGREEMENT DURING THE TWELVE (12) MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM.</p>
+
+                <h3>11.2 Exclusion of Consequential Damages</h3>
+                <p class="caps-text">IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF DATA, LOSS OF BUSINESS OPPORTUNITIES, OR COST OF PROCUREMENT OF SUBSTITUTE SERVICES, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE) AND EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+                <h3>11.3 Exceptions</h3>
+                <p>The limitations set forth in Sections 11.1 and 11.2 shall not apply to:</p>
+                <ol>
+                    <li>Customer's payment obligations under Article 5;</li>
+                    <li>Either Party's indemnification obligations under this Article 11;</li>
+                    <li>Breaches of the confidentiality obligations set forth in Article 10;</li>
+                    <li>Either Party's willful misconduct or gross negligence; or</li>
+                    <li>Infringement or misappropriation of the other Party's Intellectual Property Rights.</li>
+                </ol>
+
+                <h3>11.4 Customer Indemnification</h3>
+                <p>Customer shall indemnify, defend, and hold harmless Clevver and its officers, directors, employees, and agents from and against any and all third-party claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+                <ol>
+                    <li>Customer's use of the Platform Services in violation of this Agreement or the ToS;</li>
+                    <li>Customer Data, including any claim that Customer Data infringes or misappropriates a third party's Intellectual Property Rights or violates applicable law;</li>
+                    <li>Customer's or its Authorized Users' violation of the Acceptable Use Policy; or</li>
+                    <li>Customer's breach of its representations and warranties under this Agreement.</li>
+                </ol>
+
+                <h3>11.5 Clevver Indemnification</h3>
+                <p>Clevver shall indemnify, defend, and hold harmless Customer and its officers, directors, employees, and agents from and against any third-party claim that the Platform Services, as provided by Clevver and used by Customer in accordance with this Agreement, infringe a valid United States patent, copyright, or trademark. Clevver's obligation under this Section is contingent upon Customer: (a) providing Clevver with prompt written notice of the claim; (b) granting Clevver sole control of the defense and settlement of the claim; and (c) providing reasonable cooperation at Clevver's expense.</p>
+
+                <h3>11.6 Indemnification Procedure</h3>
+                <p>The indemnifying Party shall not settle any claim in a manner that imposes any obligation or liability on the indemnified Party without the indemnified Party's prior written consent, which shall not be unreasonably withheld. The indemnified Party may participate in the defense of any claim at its own expense with counsel of its own choosing.</p>
+
+                <!-- ARTICLE 12: WARRANTIES AND DISCLAIMERS -->
+                <h2>Article 12: Warranties and Disclaimers</h2>
+
+                <h3>12.1 Clevver Warranties</h3>
+                <p>Clevver represents and warrants that:</p>
+                <ol>
+                    <li>It has the legal authority and right to enter into this Agreement and perform its obligations hereunder;</li>
+                    <li>The Platform Services will perform materially in accordance with the applicable documentation and the service levels set forth in Article 4; and</li>
+                    <li>It will provide all services under this Agreement in a professional and workmanlike manner consistent with generally accepted industry standards.</li>
+                </ol>
+
+                <h3>12.2 Customer Warranties</h3>
+                <p>Customer represents and warrants that:</p>
+                <ol>
+                    <li>It has the legal authority and right to enter into this Agreement and perform its obligations hereunder;</li>
+                    <li>It has all rights, licenses, and permissions necessary to upload, store, and make available all Customer Data through the Platform; and</li>
+                    <li>Customer Data does not and will not violate any applicable law, regulation, or third-party right, including Intellectual Property Rights.</li>
+                </ol>
+
+                <h3>12.3 Disclaimer</h3>
+                <p class="caps-text">EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PLATFORM SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE." CLEVVER DISCLAIMS ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. CLEVVER DOES NOT WARRANT THAT THE PLATFORM SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE. CUSTOMER ASSUMES ALL RISK ASSOCIATED WITH ITS USE OF THE PLATFORM SERVICES.</p>
+
+                <!-- ARTICLE 13: GOVERNING LAW AND DISPUTE RESOLUTION -->
+                <h2>Article 13: Governing Law and Dispute Resolution</h2>
+
+                <h3>13.1 Governing Law</h3>
+                <p>This Agreement shall be governed by and construed in accordance with the laws of the State of North Carolina, United States of America, without regard to its conflict of laws principles.</p>
+
+                <h3>13.2 Negotiation</h3>
+                <p>The Parties shall first attempt to resolve any dispute, controversy, or claim arising out of or relating to this Agreement through good-faith negotiation. Either Party may initiate the negotiation process by delivering written notice to the other Party describing the dispute. The Parties shall have thirty (30) days from receipt of such notice to resolve the dispute through negotiation.</p>
+
+                <h3>13.3 Mediation</h3>
+                <p>If the Parties are unable to resolve the dispute through negotiation within the thirty (30) day period, the dispute shall be submitted to mediation administered by the American Arbitration Association ("AAA") in accordance with its Commercial Mediation Procedures. The mediation shall take place in the State of North Carolina. The costs of mediation shall be shared equally by the Parties.</p>
+
+                <h3>13.4 Litigation</h3>
+                <p>If mediation fails to resolve the dispute within sixty (60) days of the commencement of mediation, either Party may pursue its rights and remedies in the state or federal courts located in the State of North Carolina. Each Party hereby irrevocably consents to the exclusive jurisdiction and venue of such courts for any action arising out of or related to this Agreement.</p>
+
+                <h3>13.5 Injunctive Relief</h3>
+                <p>Notwithstanding the foregoing, either Party may seek injunctive or other equitable relief in any court of competent jurisdiction at any time to protect its Confidential Information, Intellectual Property Rights, or to prevent irreparable harm.</p>
+
+                <!-- ARTICLE 14: FORCE MAJEURE -->
+                <h2>Article 14: Force Majeure</h2>
+
+                <h3>14.1 Excused Performance</h3>
+                <p>Neither Party shall be liable for any failure or delay in the performance of its obligations under this Agreement (other than payment obligations) to the extent such failure or delay is caused by events beyond its reasonable control, including but not limited to: natural disasters, acts of God, war, terrorism, civil unrest, pandemics or epidemics, government actions or restrictions, power failures, internet or telecommunications outages, or cyberattacks ("Force Majeure Event").</p>
+
+                <h3>14.2 Notice and Mitigation</h3>
+                <p>The affected Party shall: (a) provide the other Party with prompt written notice of the Force Majeure Event and its expected duration; and (b) use commercially reasonable efforts to mitigate the impact of the Force Majeure Event and resume performance as soon as practicable.</p>
+
+                <h3>14.3 Termination Right</h3>
+                <p>If a Force Majeure Event continues for a period exceeding ninety (90) consecutive days, either Party may terminate this Agreement upon thirty (30) days' written notice to the other Party, without liability for such termination.</p>
+
+                <!-- ARTICLE 15: GENERAL PROVISIONS -->
+                <h2>Article 15: General Provisions</h2>
+
+                <h3>15.1 Entire Agreement</h3>
+                <p>This Agreement, including all Exhibits attached hereto and the Terms of Service incorporated by reference, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, proposals, negotiations, representations, and communications, whether oral or written, relating to such subject matter.</p>
+
+                <h3>15.2 Amendments</h3>
+                <p>This Agreement may not be amended, modified, or supplemented except by a written instrument signed by authorized representatives of both Parties.</p>
+
+                <h3>15.3 Severability</h3>
+                <p>If any provision of this Agreement is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, and the remaining provisions shall continue in full force and effect.</p>
+
+                <h3>15.4 Waiver</h3>
+                <p>The failure of either Party to enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by the waiving Party.</p>
+
+                <h3>15.5 Assignment</h3>
+                <p>Neither Party may assign or transfer this Agreement or any of its rights or obligations hereunder without the prior written consent of the other Party, except that either Party may assign this Agreement without consent in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets, provided the assignee agrees in writing to be bound by the terms of this Agreement.</p>
+
+                <h3>15.6 Notices</h3>
+                <p>All notices required or permitted under this Agreement shall be in writing and shall be deemed effectively given: (a) upon personal delivery; (b) upon confirmed transmission by email to the designated contact addresses; (c) one (1) business day after deposit with a nationally recognized overnight courier; or (d) three (3) business days after deposit in the United States mail, certified, return receipt requested, postage prepaid. Notices shall be sent to the addresses set forth in the preamble of this Agreement, or to such other address as a Party may designate by written notice.</p>
+                <p>Operational notices (e.g., support requests, maintenance notifications) may be delivered by email. Legal notices (e.g., breach notices, termination notices) shall be delivered by certified mail or nationally recognized overnight courier in addition to email.</p>
+
+                <h3>15.7 Independent Contractors</h3>
+                <p>The Parties are independent contractors. Nothing in this Agreement creates or is intended to create a partnership, joint venture, franchise, agency, or employment relationship between the Parties.</p>
+
+                <h3>15.8 No Third-Party Beneficiaries</h3>
+                <p>This Agreement is for the sole benefit of the Parties and their respective successors and permitted assigns. Nothing in this Agreement, express or implied, is intended to confer upon any third party any rights or remedies.</p>
+
+                <h3>15.9 Counterparts</h3>
+                <p>This Agreement may be executed in counterparts, each of which shall be deemed an original and all of which together shall constitute one and the same instrument. Electronic signatures shall have the same legal effect as original signatures.</p>
+
+                <h3>15.10 Headings</h3>
+                <p>The headings in this Agreement are for convenience of reference only and shall not affect the interpretation or construction of this Agreement.</p>
+
+                <!-- ARTICLE 16: SIGNATURES -->
+                <h2>Article 16: Execution</h2>
+                <p><strong>IN WITNESS WHEREOF,</strong> the Parties have executed this Platform Services Agreement as of the Effective Date.</p>
+
+                <div class="signature-grid">
+                    <div class="signature-block">
+                        <h3>DELIVERYPATH WIRELESS, LLC<br>d/b/a CLEVVER</h3>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Signature</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Printed Name</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Title</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Date</span>
+                        </div>
+                    </div>
+                    <div class="signature-block">
+                        <h3>CUSTOMER:<br><span class="contract-field">&nbsp;</span></h3>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Signature</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Printed Name</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Title</span>
+                        </div>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Date</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXHIBIT A: ORDER FORM -->
+                <div class="exhibit-header">
+                    <h2>Exhibit A: Order Form</h2>
+                    <p>This Order Form is attached to and made part of the Platform Services Agreement between Clevver and Customer.</p>
+                </div>
+
+                <h3>Customer Information</h3>
+                <div class="exhibit-field-group">
+                    <span class="exhibit-label">Customer Name:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Contract Number:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Effective Date:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Primary Contact:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Contact Email:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Contact Phone:</span>
+                    <div class="exhibit-value"></div>
+                </div>
+
+                <h3>Storage and Pricing</h3>
+                <div class="exhibit-field-group">
+                    <span class="exhibit-label">Storage Quota:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">One-Time Storage Fee:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Volume Discount:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Monthly Recurring Fee:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Recurring Fee Covers:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Payment Schedule:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Net Payment Terms:</span>
+                    <div class="exhibit-value"></div>
+                </div>
+
+                <h3>Service Levels</h3>
+                <div class="exhibit-field-group">
+                    <span class="exhibit-label">SLA Uptime Target:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">SLA Credit Cap:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">API Response Target:</span>
+                    <div class="exhibit-value"></div>
+                </div>
+
+                <h3>Term</h3>
+                <div class="exhibit-field-group">
+                    <span class="exhibit-label">Initial Term Length:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Renewal Period:</span>
+                    <div class="exhibit-value"></div>
+                </div>
+
+                <h3>Additional Services</h3>
+                <div class="exhibit-field-group">
+                    <span class="exhibit-label">Branded Desktop App:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Account Manager:</span>
+                    <div class="exhibit-value"></div>
+                    <span class="exhibit-label">Custom Integrations:</span>
+                    <div class="exhibit-value"></div>
+                </div>
+
+                <h3>Special Terms and Notes</h3>
+                <div style="border: 1px solid var(--color-border); min-height: 120px; padding: var(--space-md); margin: var(--space-md) 0; border-radius: 4px;"></div>
+
+                <div class="signature-grid" style="margin-top: var(--space-xl);">
+                    <div class="signature-block">
+                        <h3>CLEVVER</h3>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Authorized Signature &amp; Date</span>
+                        </div>
+                    </div>
+                    <div class="signature-block">
+                        <h3>CUSTOMER</h3>
+                        <div class="signature-field">
+                            <div class="signature-line"></div>
+                            <span class="signature-label">Authorized Signature &amp; Date</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="site-footer">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://get.clevver.org/786a334a9bc7509686ada1990b43777366ef28031a0944d296b3e9172fbb0cab.png" alt="Clevver" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Permanent encrypted storage for your AI work. Save once, access forever.</p>
+                    <div class="footer-contact">
+                        <a href="mailto:sales@clevver.org">sales@clevver.org</a>
+                        <a href="tel:+1-855-335-7284">(855) 335-7284</a>
+                        <a href="https://bsky.app/profile/clevver.org" target="_blank" rel="noopener noreferrer">Join us on Bluesky</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#solutions">Features</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="index.html#compliance">Compliance</a></li>
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="index.html#security">Security</a></li>
+                            <li><a href="https://stats.uptimerobot.com/jBmX1iYk3l/" target="_blank" rel="noopener noreferrer">Status</a></li>
+                            <li><a href="#" class="open-typeform">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="https://docs.getlynx.io/clevver/clevver-terms-of-service-agreement" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+                            <li><a href="hipaa.html">HIPAA Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyrightYear"></span> Deliverypath Wireless, LLC. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">AES-256 Encrypted</span>
+                    <span class="badge">Permanent Storage</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+</body>
+</html>
