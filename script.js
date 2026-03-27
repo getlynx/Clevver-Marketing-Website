@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li><a href="index.html#security">Security</a></li>
                             <li><a href="index.html#compliance">Compliance</a></li>
                             <li><a href="index.html#pricing">Pricing</a></li>
+                            <li><a href="index.html#faq">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
