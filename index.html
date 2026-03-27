@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css">
     <script>
         (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
@@ -813,7 +813,7 @@
                         <span>Does ChatGPT save my conversations permanently?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>No. ChatGPT does not guarantee permanent storage of your conversations. OpenAI's retention policies can change, and conversations may be deleted due to account changes, policy updates, or storage limits. Clevver lets you save any AI conversation permanently with AES-256 encryption — independent of any AI provider's policies.</p>
                     </div>
                 </div>
@@ -822,7 +822,7 @@
                         <span>Can AI companies delete my conversations without warning?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Yes. Most AI platforms reserve the right to delete or modify stored conversations at any time. Policy changes, server maintenance, account downgrades, and terms-of-service updates can all result in lost chat history. Saving your important AI work to Clevver ensures it exists permanently, regardless of what any AI company decides to do.</p>
                     </div>
                 </div>
@@ -831,7 +831,7 @@
                         <span>How do I resume a long research session in ChatGPT or Claude?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Save your research session to Clevver before closing the chat. When you're ready to continue — whether that's the next day or the next year — restore the session in ChatGPT, Claude, or any other AI tool. Your full conversation context is preserved, so you don't need to re-explain anything.</p>
                     </div>
                 </div>
@@ -840,7 +840,7 @@
                         <span>What's the best way to preserve AI research between sessions?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Use Clevver to save each AI session as a permanent, encrypted file. Tag files by project or topic for easy retrieval. When you start a new session, restore your previous work into any AI tool and continue with full context. This works across all major AI platforms.</p>
                     </div>
                 </div>
@@ -849,7 +849,7 @@
                         <span>How do I switch from ChatGPT to Claude without losing my work?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Save your ChatGPT conversations and files to Clevver before switching. Then restore them in Claude (or any other AI tool). Your entire chat history, research context, and files transfer with you. Clevver acts as a permanent, provider-independent archive for all your AI work.</p>
                     </div>
                 </div>
@@ -858,7 +858,7 @@
                         <span>Is there a way to store AI output so no one else can access it?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Yes. Clevver encrypts every file with AES-256 before storage and uses zero-knowledge architecture. Your unique asset key is never stored on Clevver's servers, which means even Clevver cannot read your files. Only you — and anyone you explicitly share a link with — can decrypt and access your stored AI output.</p>
                     </div>
                 </div>
@@ -867,7 +867,7 @@
                         <span>What's the best way to save important AI output permanently?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Ask your AI agent to save the file or conversation to Clevver using the Agent CLI or API. Each file is encrypted, assigned a permanent URL, and stored on a distributed network with no expiration date. You pay once for storage and retrieve your files for free, forever.</p>
                     </div>
                 </div>
@@ -876,7 +876,7 @@
                         <span>How do I create a permanent archive of my AI work?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Sign up for Clevver (5 MB free), then save your AI conversations, code, images, and documents as you work. Tag each file by project or client. Every file gets a permanent, encrypted URL. Your archive grows over time and never expires — even if you stop using Clevver for years.</p>
                     </div>
                 </div>
@@ -885,7 +885,7 @@
                         <span>I want to try a different AI but don't want to lose my history. What should I do?</span>
                         <svg class="faq-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" style="display:none">
                         <p>Save your current AI work to Clevver before making the switch. Clevver works with ChatGPT, Claude, Copilot, Gemini, and any AI that can make API calls. Once saved, your history is permanently archived and can be restored in whatever AI tool you move to next.</p>
                     </div>
                 </div>
@@ -949,7 +949,7 @@
     </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
     <script src="//embed.typeform.com/next/embed.js"></script>
 </body>
 </html>
