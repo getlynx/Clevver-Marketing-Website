@@ -1610,10 +1610,19 @@ ul {
 
 .faq-icon {
     width: 20px;
+    min-width: 20px;
     height: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     flex-shrink: 0;
     color: var(--color-text-muted);
     transition: transform var(--transition-fast);
+}
+
+.faq-question svg {
+    width: 20px;
+    height: 20px;
 }
 
 .faq-item.active .faq-icon {
