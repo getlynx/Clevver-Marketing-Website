@@ -200,6 +200,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ========================================
+    // FAQ Accordion
+    // ========================================
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const isActive = item.classList.contains('active');
+
+            // Close all items
+            document.querySelectorAll('.faq-item.active').forEach(openItem => {
+                openItem.classList.remove('active');
+                openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                openItem.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Open clicked item if it wasn't already open
+            if (!isActive) {
+                item.classList.add('active');
+                button.setAttribute('aria-expanded', 'true');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // ========================================
     // Console Welcome Message
     // ========================================
     console.log('%cClevver', 'font-size: 24px; font-weight: bold; color: #184389;');
