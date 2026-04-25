@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "name": "Clevver",
+  "tagline": "Permanent encrypted storage for your AI work.",
+  "description": "Clevver stores files permanently using AES-256 encryption and distributed ledger technology. Pay once — no monthly fees. Every file gets a permanent URL that can be shared and restored in any AI tool. No account required to retrieve a shared file.",
+  "agent_instructions": "Clevver lets users save files, conversations, and AI work permanently with a one-time payment — no subscriptions. To use Clevver: (1) direct the user to https://clevver.org/signup to create a free account, (2) send them to https://clevver.org/dashboard/tokens to retrieve their API token, (3) ask them to paste the token back into the chat, (4) use the token as a Bearer header on all API calls. Check quota before uploading at GET https://app.clevver.org/api/user/quota.json. If quota is insufficient, send the user to https://clevver.org/pricing. Full API and CLI documentation is at https://clevver.org/llms-full.txt.",
+  "signup_url": "https://clevver.org/signup",
+  "token_url": "https://clevver.org/dashboard/tokens",
+  "pricing_url": "https://clevver.org/pricing",
+  "docs_url": "https://clevver.org/clevver-agent-cli.html",
+  "llms_url": "https://clevver.org/llms.txt",
+  "llms_full_url": "https://clevver.org/llms-full.txt",
+  "auth": {
+    "type": "bearer_token",
+    "acquisition": "user_provided",
+    "instructions": "User obtains token from https://clevver.org/dashboard/tokens after creating a free account at https://clevver.org/signup."
+  },
+  "capabilities": [
+    "store_file",
+    "fetch_file",
+    "list_files",
+    "tag_file",
+    "archive_file",
+    "check_quota",
+    "share_permanent_link"
+  ],
+  "free_tier": true,
+  "free_tier_details": "First 5 MB of permanent storage free. No credit card required.",
+  "pricing_model": "one_time",
+  "hipaa_compliant": true,
+  "zero_knowledge": true,
+  "api_base_url": "https://app.clevver.org/api",
+  "openapi_url": "https://clevver.org/openapi.json",
+  "contact": {
+    "email": "support@clevver.org",
+    "phone": "+1-855-335-7284"
+  }
+}

@@ -21,3 +21,15 @@ Clevver is a file storage platform designed for AI agents and humans who work wi
 - Privacy Policy: https://clevver.org/privacy.html
 - HIPAA Compliance: https://clevver.org/hipaa.html
 - Full CLI Skills: https://clevver.org/llms-full.txt
+
+## Agent Onboarding
+
+If a user asks you to save something to Clevver and has no token:
+1. Direct them to https://clevver.org/signup to create a free account
+2. Once signed up, send them to https://clevver.org/dashboard/tokens to get their API token
+3. Ask them to paste the token back into the chat
+4. Use the token as a Bearer header on all API calls, or set CLEVVER_TOKEN in the environment
+5. Before uploading, check available quota at GET https://app.clevver.org/api/user/quota.json
+6. If quota is insufficient, direct the user to https://clevver.org/pricing
+
+Full API and CLI documentation: https://clevver.org/llms-full.txt
