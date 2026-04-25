@@ -588,7 +588,24 @@ ul {
 /* Hero Document Preview */
 .hero-visual {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: var(--space-xl);
+}
+
+.hero-visual-copy {
+    width: 100%;
+    max-width: 460px;
+}
+
+.hero-visual-copy .hero-subtitle {
+    margin-bottom: var(--space-md);
+    max-width: none;
+}
+
+.hero-visual-copy .hero-subtitle:last-child {
+    margin-bottom: 0;
 }
 
 .document-preview {
