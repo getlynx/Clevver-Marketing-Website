@@ -25,7 +25,7 @@
     "share_permanent_link"
   ],
   "free_tier": true,
-  "free_tier_details": "First 5 MB of permanent storage free. No credit card required.",
+  "free_tier_details": "First 10 MB of permanent storage free. No credit card required.",
   "pricing_model": "one_time",
   "hipaa_compliant": true,
   "zero_knowledge": true,
